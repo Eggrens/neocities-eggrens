@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <script src="papaparse.min.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+          <div class="main">
+            <div class="nav">
+              <ul>
+                <li>
+                  <a class="box" href="/index.html">
+                    <img class="button" alt="Home" title="Home" src="/assets/home.png">
+                  </a>
+                </li>
+                <li>
+                  <a class="box" href="/gallery.html">
+                    <img class="button" alt="Art Gallery" title="Art Gallery" src="/assets/art.png">
+                  </a>
+                </li>
+                <li><img class="logo" src="/assets/cyan_logogo.png"></li>
+                <li>
+                  <a class="box" href="/commissions.html">
+                    <img class="button" alt="Commission Info" title="Commission Info" src="/assets/comms.png">
+                  </a>
+                </li>
+                <li>
+                  <a class="box" href="/contact.html">
+                    <img class="button" alt="Contact" title="Contact" src="/assets/contact.png">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <div class="content">
+              <marquee>
+                <h1><em>Art Gallery</em></h1>
+              </marquee>
+
+              <h3><em>Welcome to my Art Gallery!</em></h3>
+
+              <p>
+                Feel free to look around :&rpar; <br><br>
+
+                You can sort the art by date (or by alphabetic if you're freaky like that...), and also search by tags!
+                To search using tags, enter each tag separated by spaces and click Search (e.g. "perry ode"). <br><br>
+
+                Clicking on an artwork brings up an expanded view of it. An artwork with a number means it has multiple images associated with it. <br><br>
+
+                <em>
+                  Note: This gallery requires JavaScript to function and stores data in local storage, so make sure those are enabled thanks :3.
+                  If you delete local storage for this site at any point, you can always refresh the page to fix it ..
+                </em>
+                <br><br>
+              </p>
+
+              <p id="gallery-last-updated"></p>
+              <br>
+
+              <div class="gallery-filters">
+                <label for="sort-by">Sort by:</label>
+                <select name="sort-by" id="sort-by">
+                  <option value="latest" selected>Latest</option>
+                  <option value="oldest">Oldest</option>
+                  <option value="alphabetic">Alphabetical???</option>
+                </select>
+                <label for="search-tags">Tags:</label>
+                <input type="text" name="search-tags" id="search-tags" />
+                <button id="submit">Search</button>
+              </div>
+
+              <br>
+
+              <div class="gallery">
+              </div>
+
+              <div id="modal" class="modal">
+                <div class="modal-content">
+                  <span id="close" class="close">&times;</span><br />
+                  <div class="modal-container">
+                    <a id="modal-link" class="modal-link"></a>
+                    <div id="modal-buttons" class="modal-buttons">
+                      <button id="prev" class="carousel-button">&lt;&lt;</button>
+                      <button id="next" class="carousel-button">&gt;&gt;</button>
+                    </div>
+                    <div class="modal-details">
+                      <h2 id="modal-title" class="modal-title"></h2>
+                      <p id="modal-caption" class="modal-caption"></p>
+                      <p id="modal-date" class="modal-date"></p>
+                      <p id="modal-tags" class="modal-tags"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- load gallery contents from csv -->
+              <script src="gallery.js"></script>
+            </div>
+
+            <br>
+            <p>End of Gallery...</p>
+            <br>
+            <img src="/assets/arturito-clear.gif">
+
+            <div class="badges">
+              <img class="badge" src="/assets/neocities.png">
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,274 @@
+:root {
+  --eggrens-dark: #120c18;
+  --eggrens-cyan: #90e7f4;
+  --eggrens-sub: #639ba9;
+  --eggrens-light: #cff7fc;
+  --eggrens-purple: #ceaff7;
+}
+
+/* ---------------- Page ------------------- */
+body {
+  color: var(--eggrens-cyan);
+  font-family: "Courier New", Courier, monospace;
+  background-image: url("/assets/capri-newbg.png");
+  background-position-y: -500px;
+  background-color: var(--eggrens-dark);
+  background-attachment: fixed;
+}
+
+a:link {
+  color: var(--eggrens-light);
+}
+
+a:visited {
+  color: var(--eggrens-sub);
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+hr {
+  border-top: 2px dashed;
+  border-bottom: none;
+  color: var(--eggrens-cyan);
+}
+
+.page {
+  /* Removes scrollbar auto-positioning */
+  padding-left: calc(100vw - 100%);
+}
+
+.container {
+  margin: auto;
+  margin-top: 50px;
+  max-width: 850px;
+  min-width: 850px;
+  padding: 0 10px 10px 10px;
+  text-align: center;
+  border: solid 5px;
+  background-color: var(--eggrens-dark);
+  border-color: var(--eggrens-cyan);
+}
+
+.badges {
+  margin: 25px;
+}
+
+img.badge {
+  width: 100px;
+}
+
+/* -------------- Nav Bar ------------------ */
+.nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.nav ul li {
+  float: left;
+  margin: 0 18px 0 0;
+}
+
+.nav ul li a.box {
+  text-decoration: none;
+}
+
+img.button {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  top: 25px;
+}
+
+img.logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* -------------- Home Page ---------------- */
+ul.links {
+  display: inline-block;
+  text-align: left;
+}
+
+ul.links li {
+  float: left;
+  margin-right: 30px;
+}
+
+/* ------------- Contact Page -------------- */
+ul.contacts {
+  display: inline-block;
+  text-align: left;
+}
+
+ul.contacts em {
+  color: var(--eggrens-sub)
+}
+
+/* ------------- Gallery Page -------------- */
+
+p em {
+  color: var(--eggrens-light);
+  font-weight: bold;
+}
+
+.gallery {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.artwork {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 250px;
+  color: var(--eggrens-dark);
+}
+
+.artwork:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.thumb {
+  display: block;
+  margin: auto;
+  width: 100%;
+  border: 5px hidden;
+  border-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.info {
+  width: 100%;
+  background-color: var(--eggrens-cyan);
+  border: 5px hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.date-and-num {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.num {
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+  color: var(--eggrens-dark) !important;
+}
+
+.date {
+  text-align: center;
+  background-color: var(--eggrens-sub);
+}
+
+.title-and-tags {
+  padding: 5px;
+}
+
+.title {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.tags, .modal-tags {
+  font-style: italic;
+  text-align: center;
+  font-size: 10pt;
+  word-wrap: break-word;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: var(--eggrens-dark);
+  border-radius: 20px;
+  margin: auto;
+  padding: 10px;
+  width: 600px;
+  border: 0px solid;
+}
+
+.modal-container {
+  margin-top: 20px;
+}
+
+.close {
+  float: right;
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.big {
+  width: 100%;
+}
+
+.modal-buttons {
+  display: none;
+}
+
+.modal-buttons::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.carousel-button {
+  width: 45%;
+  height: 30px;
+  margin: auto;
+  background-color: var(--eggrens-cyan);
+  color: var(--eggrens-dark);
+  border: none;
+  font-weight: bold;
+}
+
+.carousel-button:disabled {
+  background-color: var(--eggrens-light);
+  color: rgb(122, 124, 134);
+}
+
+.carousel-button:hover:enabled {
+  cursor: pointer;
+  background-color: var(--eggrens-sub);
+}
+
+#prev {
+  float: left;
+}
+
+#next {
+  float: right;
+}
+
+.gallery-filters {
+  display: block;
+}
+
+#sort-by {
+  margin-right: 40%;
+}

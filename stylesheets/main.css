@@ -1,0 +1,71 @@
+:root {
+  /* eggrens colours */
+  --stripe-green: #AAD6BE;
+  --stripe-cyan: #7CC3C5;
+  --stripe-blue: #428396;
+  --light-bg: #E0E0E0;
+  --light-text: #031D27;
+  /* denizen_deerjay / dark colours */
+  --stripe-maroon: #552941;
+  --stripe-red: #833C3A;
+  --stripe-peach: #BD7C69;
+  --dark-bg: #1F1F1F;
+  --dark-text: #FCE2D8;
+}
+
+body {
+  color: var(--light-text);
+  font-family: "Courier New", Courier, monospace;
+  background-image: url("/assets/placeholder-bg.png");
+}
+
+a:link {
+  color: var(--stripe-green);
+}
+
+a:visited {
+  color: var(--stripe-blue);
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.top {
+  width: 1000px;
+  height: 300px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.main {
+  margin: auto;
+  width: 1000px;
+  padding: 10px;
+  background-color: var(--stripe-green);
+  border-radius: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+button, input, select {
+  color: var(--light-text);
+  font-family: "Courier New", Courier, monospace;
+}

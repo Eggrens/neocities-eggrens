@@ -4,92 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eggrens Art</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/stylesheets/index.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <script src="last-updated.js"></script>
+    <script src="luxon.min.js"></script>
   </head>
   <body>
-    <div class="page">
-      <div class="container">
-          <div class="main">
-            <div class="nav">
-              <ul>
-                <li>
-                  <a class="box" href="/index.html">
-                    <img class="button" alt="Home" title="Home" src="/assets/home.png">
-                  </a>
-                </li>
-                <li>
-                  <a class="box" href="/gallery.html">
-                    <img class="button" alt="Art Gallery" title="Art Gallery" src="/assets/art.png">
-                  </a>
-                </li>
-                <li><img class="logo" src="/assets/cyan_logogo.png"></li>
-                <li>
-                  <a class="box" href="/commissions.html">
-                    <img class="button" alt="Commission Info" title="Commission Info" src="/assets/comms.png">
-                  </a>
-                </li>
-                <li>
-                  <a class="box" href="/contact.html">
-                    <img class="button" alt="Contact" title="Contact" src="/assets/contact.png">
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <hr>
-
-            <div class="content">
-              <marquee>
-                <h1><em>Eggrens_</em></h1>
-              </marquee>
-
-              <h3>
-                &#x2727; he/him &#x2727; bi &#x2727; furry artist &#x2727;
-              </h3>
-
-              <p>
-                welcome to the <em>"Eggrens web zone"</em><br><br>
-                here you can find commission info, an art gallery and contact info
-              </p>
-
-              <ul class="links">
-                <li><a href="https://bsky.app/profile/eggrens.bsky.social">Bluesky</a></li>
-                <li><a href="https://www.tumblr.com/blog/eggrens">Tumblr</a></li>
-                <li><a href="https://toyhou.se/Eggrens_/characters">Toyhouse &lpar;archive&rpar;</a></li>
-              </ul>
-
-              <h4><em>update log:</em></h4>
-              <p id="update-log"></p>
-              <p id="website-last-updated"></p>
-            </div>
-
-            <br>
-            <img src="/assets/BisexualPrideFlag.gif">
-
-            <div class="badges">
-
-              <img class="badge" src="/assets/cheezitofthevalley-1.gif">
-              <img class="badge" src="/assets/cheezitofthevalley-13.png">
-              <img class="badge" src="/assets/cheezitofthevalley-2.jpg">
-              <br>
-              <img class="badge" src="/assets/cheezitofthevalley-16.png">
-              <img class="badge" src="/assets/cheezitofthevalley-19.png">
-              <img class="badge" src="/assets/cheezitofthevalley-3.webp">
-              <br>
-              <img src="/assets/LinuxMintUserbar_by_Malody_350_19.png"><br>
-              <img src="/assets/firefoxuser.jpg"><br>
-              <img src="/assets/h2ouser.jpg"><br>
-              <img src="/assets/htmluser.jpg"><br>
-              <img src="/assets/internet_user.jpg">
-              <br>
-              <img class="badge" src="/assets/neocities.png">
-            </div>
-
-            <p>Credit to cheezitofthevalley on Tumblr for the webcore stamps!</p>
-          </div>
+    <div id="displayCrowAttack">
+      <button id="stopCrowAttack" class="fr clickable">Stop Crow Attack</button>
+      <div style="height: 80%;">
+        <img style="width: 100%;" src="/assets/crowback.gif" alt="crows">
+        <img style="width: 100%; position: absolute; top: 200px; right: 100px;" src="/assets/crowback-fast.gif" alt="fast crows">
+        <img style="width: 100%; position: absolute; bottom: 40px; right: 20px;" src="/assets/crowback-slow.gif" alt="slow crows">
       </div>
+
+      <marquee scrollamount="10">
+        Crow attack!
+      </marquee>
     </div>
+
+    <div class="main">
+      <div class="forum clearfix">
+        <div class="forum-info fl" style="width: 250px;">
+          <img class="portrait" src="/assets/perry-portrait.png">
+          <dl class="user-details">
+            <dt class="username">Eggrens</dt>
+            <dd>Pronouns: he/him</dd>
+            <dd>Age: <span id="age">XX</span></dd>
+            <dd>Species: Canada jay</dd>
+            <dd>Location: my computer</dd>
+            <dd>Joined: 2004-09-08</dd>
+            <dd>
+              Power:
+              <div class="power-bar">
+                100/100
+              </div>
+            </dd>
+            <dd>
+              <div>
+                <img class="flag" src="assets/canada-flag.png">
+                <img class="flag" src="assets/bi-flag.png">
+                <img class="zodiac" src="assets/virgo.png">
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <div class="forum-body">
+          <div class="forum-content" style="min-height: 350px;">
+            <center><h1>About Me!!</h1></center>
+            <p>
+              umm hiiiii,,, i'm Eggrens, or u can call me Jay for short :&gt; <br><br>
+              my interests:
+              <ul class="arrow-list">
+                <li>computers & programming</li>
+                <li>drawing furry art</li>
+                <li>video gameing</li>
+                <li>birding</li>
+                <li>languages</li>
+              </ul>
+              favourite game: Ape Escape 3 !! <br>
+              favourite birds: corvids, especially crows and ravens :&gt; <br><br>
+              programming languages i dabble in:
+              <ul class="arrow-list">
+                <li>HTML/CSS & JavaScript</li>
+                <li>Java</li>
+                <li>Ruby</li>
+                <li>a bit of Python</li>
+                <li>a bit of C++</li>
+              </ul>
+              add me on Discord (@eggrens) if u wanna chat :3 :smile:
+            </p>
+            <div class="links">
+              <center>
+              <a href="https://bsky.app/profile/eggrens.bsky.social"><img src="/assets/placeholder.png" alt="Bluesky"></a>
+              <a href="https://bsky.app/profile/denizendeerjay.bsky.social"><img src="/assets/placeholder.png" alt="Bluesky 18+"></a>
+              <a href="https://eggrens.tumblr.com/"><img src="/assets/placeholder.png" alt="Tumblr"></a>
+              <a href="https://github.com/Eggrens"><img src="/assets/placeholder.png" alt="Github"></a>
+              </center>
+            </div>
+          </div>
+          <div class="signature">
+            <img src="/assets/LinuxMintUserbar_by_Malody_350_19.png">
+            <img src="/assets/firefoxuser.jpg">
+            <img src="/assets/h2ouser.jpg">
+            <img src="/assets/htmluser.jpg">
+            <img src="/assets/internet_user.jpg">
+            <div id="startCrowAttack" class="fr clickable" alt="Crow Attack">
+              <img src="/assets/FunFind_crow_left.gif" alt="Crow Attack">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <center>
+        <h1>Update Log:</h1>
+        <iframe src="update_log.html" width="900" height="300" title="Update Log"></iframe>
+        <img style="height: 40px; margin-top: 10px;" src="/assets/neocities.png" alt="Hosted by Neocities">
+      </center>
+    </div>
+
+    <script src="make-header.js"></script>
   </body>
+
+  <script>
+    // Calculate age in years
+    var ageElement = document.getElementById("age");
+    var birthday = luxon.DateTime.fromISO('2004-09-08');
+    var diff = birthday.diffNow('years').toObject();
+    var years = Math.floor(Math.abs(diff['years']));
+    ageElement.innerHTML = years;
+
+    // Crow attack
+    var displayCrowAttack = document.getElementById('displayCrowAttack');
+    var startCrowAttack = document.getElementById('startCrowAttack');
+    var stopCrowAttack = document.getElementById('stopCrowAttack');
+
+    function crowAttack() {
+      var style = window.getComputedStyle(displayCrowAttack);
+      if (style.display === "none") {
+        displayCrowAttack.style.display = "block";
+        console.log("show");
+      } else {
+        displayCrowAttack.style.display = "none";
+        console.log("hide");
+      }
+    }
+
+    stopCrowAttack.addEventListener('click', crowAttack);
+    startCrowAttack.addEventListener('click', crowAttack);
+  </script>
 </html>

@@ -1,0 +1,119 @@
+@import "main.css";
+
+.forum {
+  padding: 20px 50px;
+  background-color: var(--stripe-cyan);
+  border-radius: 20px;
+}
+
+.portrait {
+  display: block;
+  width: 200px;
+  border: solid 1px;
+  border-color: var(--light-text);
+  border-radius: 25px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 18pt;
+  font-style: normal;
+}
+
+.user-details dd {
+  margin: 5px 0px;
+}
+
+.power-bar {
+  width: 150px;
+  height: 15px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  color: cyan;
+  background-color: var(--stripe-blue);
+  border-radius: 5px;
+}
+
+.flag {
+  height: 30px;
+  width: 60px;
+}
+
+.zodiac {
+  height: 30px;
+  width: 30px;
+}
+
+.forum-body {
+  display: inline-block;
+  width: 625px;
+  border-left: solid 1px;
+  padding-left: 20px;
+}
+
+.arrow-list {
+  list-style-type: none;
+}
+
+.arrow-list li {
+  display: grid;
+  grid-template-columns: 20px auto;
+  justify-content: start;
+}
+
+.arrow-list li::before {
+  content: '🡒';
+  font-size: 10pt;
+}
+
+.links {
+  margin-bottom: 10px;
+}
+
+.links img {
+  width: 75px;
+  height: 75px;
+}
+
+.signature {
+  border-top: dashed 1px;
+  padding-top: 20px;
+}
+
+.signature img {
+  display: block;
+}
+
+#stopCrowAttack {
+  width: 170px;
+  height: 30px;
+  font-size: 12pt;
+}
+
+#displayCrowAttack {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+marquee {
+  background-color: rgba(100, 100, 100, 0.8);
+  color: yellow;
+  font-family: Arial;
+  height: 30px;
+  font-size: 15pt;
+  padding-top: 5px;
+}
+
+iframe {
+  border: solid 10px;
+  border-color: var(--stripe-blue);
+  border-radius: 20px;
+}

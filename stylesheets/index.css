@@ -2,7 +2,7 @@
 
 .forum {
   padding: 20px 50px;
-  background-color: var(--stripe-cyan);
+  background-color: var(--secondary);
   border-radius: 20px;
 }
 
@@ -10,7 +10,7 @@
   display: block;
   width: 200px;
   border: solid 1px;
-  border-color: var(--light-text);
+  border-color: var(--cyblack);
   border-radius: 25px;
 }
 
@@ -31,13 +31,8 @@
   text-align: center;
   font-weight: bold;
   color: cyan;
-  background-color: var(--stripe-blue);
+  background-color: var(--tertiary);
   border-radius: 5px;
-}
-
-.flag {
-  height: 30px;
-  width: 60px;
 }
 
 .zodiac {
@@ -114,6 +109,6 @@ marquee {
 
 iframe {
   border: solid 10px;
-  border-color: var(--stripe-blue);
+  border-color: var(--tertiary);
   border-radius: 20px;
 }

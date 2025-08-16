@@ -4,54 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Log</title>
+    <link href="/stylesheets/update_log.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
 <body>
-    <div class="main">
-        <h1 class="log-title">New Update</h1>
-        <h3 class="log-date">2025-08-14</h3>
-        <p>
-            Here is the content of the log..... woah!! This is pretty funny? also it has word wrapping so I can keep talking like
-            this here.... and it should wrap it just fine :)
-            look I can even put an image here:
-            <img src="assets/anbird1_e0.gif" alt="aa">
-            pretty neat
-        </p>
-        <p id="cursorBlink">>_</p>
-    </div>
+    <h1 class="log-title">New Update</h1>
+    <h3 class="log-date">2025-08-14</h3>
+    <p>
+        Here is the content of the log..... woah!! This is pretty funny? also it has word wrapping so I can keep talking like
+        this here.... and it should wrap it just fine :)
+        look I can even put an image here:
+        <img src="assets/anbird1_e0.gif" alt="aa">
+        pretty neat
+    </p>
+    <p id="cursorBlink">>_</p>
 </body>
-<style>
-    :root {
-        --stripe-green: #AAD6BE;
-        --stripe-cyan: #7CC3C5;
-        --stripe-blue: #428396;
-        --light-bg: #E0E0E0;
-        --light-text: #031D27;
-    }
-
-    body {
-        color: var(--light-bg);
-        font-family: "Courier New", Courier, monospace;
-        background-color: var(--light-text);
-        padding: 10px;
-        word-wrap: break-word;
-    }
-
-    img {
-        display: block;
-    }
-</style>
-<script>
-    var cursorBlink = document.getElementById("cursorBlink");
-
-    function blink() {
-        if (cursorBlink.innerText === ">_") {
-            cursorBlink.innerText = ">";
-        } else {
-            cursorBlink.innerText = ">_";
-        }
-    }
-
-    setInterval(blink, 1000);
-</script>
+<script src="cursorblink.js"></script>
 </html>

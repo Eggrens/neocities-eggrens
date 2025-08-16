@@ -1,0 +1,38 @@
+--- # list of characters
+# ---------------- SONAS -------------------
+perry:
+  name: Perry
+  colour: "#DEE9F3"
+  stroke: "#1D1F2B"
+  flags:
+    - canada
+    - bi
+  species: Canada jay
+  pronouns: he/him
+  gender: Male
+  age: My age :>
+  height: 5' 10"
+  smell: Snow?
+  bio: |
+    Perry's bio here...
+    and it's also multiline
+    yay :>
+ode:
+  name: Ode
+  colour: "#43385C"
+  stroke: "#8F88DF"
+  flags:
+    - canada
+    - bi
+  species: White-tailed deer
+  pronouns: he/him
+  gender: Male
+  age: My age :>
+  height: 5' 10"
+  smell: Pine needles
+  bio: |
+    Ode's bio here...
+    and it's also multiline
+    yay :>
+# ---------------- UNTITLED UNIVERSE -------------------
+# ---------------- LYNNAE RIDGE -------------------

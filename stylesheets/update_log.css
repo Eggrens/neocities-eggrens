@@ -1,0 +1,14 @@
+@import "main.css";
+
+body {
+    color: var(--offwhite);
+    font-family: "Courier New", Courier, monospace;
+    background-color: var(--cyblack);
+    background-image: var(--grid);
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+img {
+    display: block;
+}

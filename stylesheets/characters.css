@@ -1,1 +1,83 @@
 @import "main.css";
+
+.characters {
+    text-align: center;
+    color: var(--offwhite);
+    background-color: var(--cyblack);
+    background-image: var(--grid);
+    border: solid 10px var(--tertiary);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.characters dt {
+    margin: 10px;
+}
+
+.characters dd {
+    margin: auto;
+}
+
+.icon {
+    height: 50px;
+    margin: 5px;
+}
+
+#cursorBlink {
+    text-align: left;
+    margin-left: 14px;
+}
+
+.character-info {
+    background-color: var(--cyblack);
+    background-image: var(--grid);
+    color: var(--offwhite);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.character-details {
+    width: 600px;
+    word-wrap: break-word;
+}
+
+.character-details dt {
+    display: inline-block;
+}
+
+#name {
+    font-size: 20pt;
+    font-weight: bolder;
+    paint-order: stroke fill;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: var(--tertiary);
+}
+
+table {
+    margin-top: 30px;
+    width: 100%;
+}
+
+td {
+    width: 33%;
+}
+
+tr:nth-child(even) td {
+    color: cyan;
+    padding-bottom: 20px;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.character-portrait {
+    height: 200px;
+    border-radius: 20px;
+}
+
+.character-flags {
+    list-style-type: none;
+    margin-right: 10px;
+}

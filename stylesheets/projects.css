@@ -1,1 +1,35 @@
 @import "main.css";
+
+.diamond {
+    background-color: var(--secondary);
+    height: 100px;
+    width: 100px;
+    transform: rotate(45deg);
+}
+
+.project-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.project-list li {
+    margin: 50px 100px;
+}
+
+.project-info {
+    width: 650px;
+}
+
+.project-icon {
+    transform: rotate(-45deg);
+    height: 92px;
+    width: 92px;
+    vertical-align: top;
+    border: 4px solid var(--tertiary);
+    border-radius: 20px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20pt;
+}

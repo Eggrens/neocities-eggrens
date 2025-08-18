@@ -47,21 +47,6 @@
   padding-left: 20px;
 }
 
-.arrow-list {
-  list-style-type: none;
-}
-
-.arrow-list li {
-  display: grid;
-  grid-template-columns: 20px auto;
-  justify-content: start;
-}
-
-.arrow-list li::before {
-  content: '🡒';
-  font-size: 10pt;
-}
-
 .links {
   margin-bottom: 10px;
 }

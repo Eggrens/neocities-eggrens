@@ -3,10 +3,16 @@
   --stripe-one: #AAD6BE;
   --stripe-two: #7CC3C5;
   --stripe-three: #428396;
+  --link-one: green;
+  --link-two: olivedrab;
+  --link-three: cyan;
   /* denizen_deerjay / dark colours */
   --stripe-one-dark: #552941;
   --stripe-two-dark: #833C3A;
   --stripe-three-dark: #BD7C69;
+  --link-one-dark: #FFF;
+  --link-two-dark: #FFF;
+  --link-three-dark: cyan;
 
   /* website colours (default to light) */
   --primary: var(--stripe-one);
@@ -15,6 +21,9 @@
   --offwhite: #E0E0E0;
   --cyblack: #031D27;
   --main-text: var(--cyblack);
+  --link: var(--link-one);
+  --link-visited: var(--link-two);
+  --link-hover: var(--link-three);
   --grid: linear-gradient(to right, rgba(0,0,0, 0.6) 0 100%), url("/assets/grid.gif");
 }
 
@@ -25,21 +34,19 @@ body {
   background-image: url("/assets/um-colours-bg.png");
   background-attachment: fixed;
   background-position-y: 50%;
-  /* background: var(--light-bg);
-  background: linear-gradient(180deg,var(--light-bg) 0%, var(--stripe-green) 43%, var(--stripe-cyan) 73%, var(--stripe-blue) 100%); */
 }
 
-/* a:link {
-  color: var(--offwhite);
+a:link {
+  color: var(--link);
 }
 
 a:visited {
-  color: var(--stripe-blue);
+  color: var(--link-visited);
 }
 
 a:hover {
-  color: #ffffff;
-} */
+  color: var(--link-hover);
+}
 
 .top {
   width: 1000px;
@@ -84,4 +91,30 @@ button, input, select {
 .flag {
   height: 30px;
   width: 60px;
+}
+
+.arrow-list {
+  list-style-type: none;
+}
+
+.arrow-list li {
+  display: grid;
+  grid-template-columns: 20px auto;
+  justify-content: start;
+}
+
+.arrow-list li::before {
+  content: '🡒';
+  font-size: 10pt;
+}
+
+.theme-switch {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.theme-icon {
+  width: 75px;
+  border-radius: 20px;
 }

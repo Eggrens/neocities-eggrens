@@ -1,39 +1,46 @@
 :root {
-  /* eggrens colours */
+  --offwhite: #E0E0E0;
+  --cyblack: #031D27;
+  --marblack: #27031d;
+  --grid: linear-gradient(to right, rgba(0,0,0, 0.6) 0 100%), url('/assets/grid.gif');
+  --grid-dark: linear-gradient(to right, rgba(39,3,29, 0.6) 0 100%), url('/assets/grid.gif');
+
+  /* light colours */
   --stripe-one: #AAD6BE;
   --stripe-two: #7CC3C5;
   --stripe-three: #428396;
   --link-one: green;
   --link-two: olivedrab;
   --link-three: cyan;
-  /* denizen_deerjay / dark colours */
-  --stripe-one-dark: #552941;
-  --stripe-two-dark: #833C3A;
-  --stripe-three-dark: #BD7C69;
-  --link-one-dark: #FFF;
-  --link-two-dark: #FFF;
-  --link-three-dark: cyan;
+  --shade: var(--cyblack);
 
-  /* website colours (default to light) */
+  /* dark colours */
+  --stripe-one-dark: #5B429D;
+  --stripe-two-dark: #642566;
+  --stripe-three-dark: #471143;
+  --link-one-dark: pink;
+  --link-two-dark: palevioletred;
+  --link-three-dark: deeppink;
+  --shade-dark: var(--marblack);
+
+  /* theme properties */
   --primary: var(--stripe-one);
   --secondary: var(--stripe-two);
   --tertiary: var(--stripe-three);
-  --offwhite: #E0E0E0;
-  --cyblack: #031D27;
   --main-text: var(--cyblack);
+  --dark: var(--shade);
   --link: var(--link-one);
   --link-visited: var(--link-two);
   --link-hover: var(--link-three);
-  --grid: linear-gradient(to right, rgba(0,0,0, 0.6) 0 100%), url("/assets/grid.gif");
+  --bg-grid: var(--grid);
 }
 
 body {
   color: var(--main-text);
   font-family: "Courier New", Courier, monospace;
   background-color: var(--offwhite);
-  background-image: url("/assets/um-colours-bg.png");
-  background-attachment: fixed;
-  background-position-y: 50%;
+  background-image: url("/assets/light-bg.png");
+  background-repeat: repeat-y;
 }
 
 a:link {
@@ -48,9 +55,17 @@ a:hover {
   color: var(--link-hover);
 }
 
-.top {
+.header {
   width: 1000px;
-  height: 300px;
+  height: 333px;
+  display: block;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+.nav {
+  width: 1000px;
+  height: 100px;
   display: block;
   margin: auto;
   margin-bottom: 10px;

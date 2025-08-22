@@ -13,19 +13,19 @@ em {
   justify-content: center;
   padding: 20px 0px;
   border-radius: 20px;;
-  background-color: var(--cyblack);
-  background-image: var(--grid);
+  background-color: var(--dark);
+  background-image: var(--bg-grid);
 }
 
 .artwork {
   margin: auto;
   margin-bottom: 20px;
   width: 300px;
-  color: var(--cyblack);
+  color: var(--main-text);
 }
 
 .artwork:hover {
-  color: white;
+  color: var(--link-hover);
 }
 
 .thumb {
@@ -55,7 +55,7 @@ em {
   background-color: var(--offwhite);
   text-align: center;
   font-weight: bold;
-  color: var(--cyblack) !important;
+  color: var(--dark) !important;
 }
 
 .date {
@@ -93,7 +93,7 @@ em {
 }
 
 .modal-content {
-  background-color: var(--cyblack);
+  background-color: var(--dark);
   color: var(--offwhite);
   text-align: center;
   border-radius: 20px;
@@ -159,6 +159,7 @@ em {
 #submit {
   width: 80px;
   background-color: var(--primary);
+  color: var(--main-text);
   border: solid 2px;
   border-color: var(--tertiary);
   border-radius: 10px;
@@ -166,4 +167,5 @@ em {
 
 #submit:hover {
   background-color: var(--offwhite);
+  color: black;
 }

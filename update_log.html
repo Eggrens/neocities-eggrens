@@ -11,13 +11,17 @@
     <h1 class="log-title">New Update</h1>
     <h3 class="log-date">2025-08-14</h3>
     <p>
-        Here is the content of the log..... woah!! This is pretty funny? also it has word wrapping so I can keep talking like
-        this here.... and it should wrap it just fine :)
-        look I can even put an image here:
-        <img src="assets/anbird1_e0.gif" alt="aa">
-        pretty neat
+        Here is the content of the log..... uh what happens if I put a link <a href="funny" target="_blank">here</a>
     </p>
     <p id="cursorBlink">>_</p>
 </body>
 <script src="cursorblink.js"></script>
+<script>
+    // set to dark mode grid once loaded if needed
+    // otherwise leave it to default light mode
+    if (localStorage.getItem("theme") === "dark") {
+        const gridDark = window.getComputedStyle(document.body).getPropertyValue("--grid-dark");
+        document.body.style.setProperty("--bg-grid", gridDark);
+    }
+</script>
 </html>

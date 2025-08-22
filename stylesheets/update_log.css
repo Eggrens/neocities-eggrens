@@ -4,11 +4,27 @@ body {
     color: var(--offwhite);
     font-family: "Courier New", Courier, monospace;
     background-color: var(--cyblack);
-    background-image: var(--grid);
+    background-image: var(--bg-grid);
+    background-attachment: unset;
+    background-size: auto;
+    background-repeat: unset;
+    background-position: 0;
     padding: 10px;
     word-wrap: break-word;
 }
 
 img {
     display: block;
+}
+
+a:link {
+  color: cyan;
+}
+
+a:visited {
+  color: deeppink;
+}
+
+a:hover {
+  color: white;
 }

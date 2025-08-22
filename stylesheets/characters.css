@@ -4,7 +4,7 @@
     text-align: center;
     color: var(--offwhite);
     background-color: var(--cyblack);
-    background-image: var(--grid);
+    background-image: var(--bg-grid);
     border: solid 10px var(--tertiary);
     border-radius: 20px;
     padding: 10px;
@@ -30,7 +30,7 @@
 
 .character-info {
     background-color: var(--cyblack);
-    background-image: var(--grid);
+    background-image: var(--bg-grid);
     color: var(--offwhite);
     padding: 20px;
     border-radius: 20px;
@@ -63,7 +63,7 @@ td {
 }
 
 tr:nth-child(even) td {
-    color: cyan;
+    color: var(--link-hover);
     padding-bottom: 20px;
 }
 

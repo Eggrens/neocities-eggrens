@@ -74,6 +74,14 @@ function setColours() {
         <area alt="Projects" title="Projects" href="/projects.html" coords="789,0,1000,124" shape="rect">
         </map>
     `;
+
+    // set forum image and species if on index
+    var forumPortrait = document.getElementById("forum-portrait");
+    var forumSpecies = document.getElementById("forum-species");
+    if (forumPortrait && forumSpecies) {
+        forumPortrait.src = theme === "dark" ? "/portraits/ode.png" : "/portraits/perry.png";
+        forumSpecies.innerText = "Species: " + (theme === "dark" ? "White-tailed deer" : "Canada jay");
+    }
 }
 
 addEventListener("DOMContentLoaded", function() {

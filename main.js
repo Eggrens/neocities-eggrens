@@ -64,14 +64,13 @@ function setColours() {
     var top = document.getElementById("top");
     top.innerHTML = `
         <img class="header" src="/assets/header-${theme}.png">
-        <img class="nav" src="/assets/placeholder-buttons.png" usemap="#navmap">
+        <img class="nav" src="/assets/nav-${theme}.png" usemap="#navmap">
         <map name="navmap">
-        <!-- temporary image map until actual buttons get drawn :) -->
-        <area alt="Home" title="Home" href="/index.html" coords="1,1,169,124" shape="rect">
-        <area alt="Art Gallery" title="Art Gallery" href="/gallery.html" coords="174,1,367,124" shape="rect">
-        <area alt="OCs (original characters)" title="OCs (original characters)" href="/characters.html" coords="371,0,576,124" shape="rect">
-        <area alt="Commissions" title="Commissions" href="/commissions.html" coords="582,1,784,124" shape="rect">
-        <area alt="Projects" title="Projects" href="/projects.html" coords="789,0,1000,124" shape="rect">
+        <area alt="Home" title="Home" href="/index.html" coords="0,100,100,0,279,0,179,100" shape="poly">
+        <area alt="Art Gallery" title="Art Gallery" href="/gallery.html" coords="180,100,280,0,459,0,359,100" shape="poly">
+        <area alt="OCs (original characters)" title="OCs (original characters)" href="/characters.html" coords="360,100,460,0,639,0,539,100" shape="poly">
+        <area alt="Commissions" title="Commissions" href="/commissions.html" coords="540,100,640,0,819,0,719,100" shape="poly">
+        <area alt="Projects" title="Projects" href="/projects.html" coords="720,100,820,0,1000,0,900,100" shape="poly">
         </map>
     `;
 

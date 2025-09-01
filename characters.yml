@@ -3,10 +3,10 @@
 perry:
   name: Perry
   colour: "#DEE9F3"
-  stroke: "#1D1F2B"
+  stroke: "#3F414F"
   flags:
-    - canada
     - bi
+    - canada
   species: Canada jay
   pronouns: he/him
   gender: Male
@@ -14,16 +14,16 @@ perry:
   height: 5' 10"
   smell: Snow?
   bio: |
-    Perry's bio here...
-    and it's also multiline
-    yay :>
+    Perry is my primary fursona ,, but he wasn't at first ! He was originally a random OC, even having a last name at first (I used to follow a naming convention for OCs where I'd derive a first and last name based off of their species name). I eventually adopted him as my main fursona cuz I love birds & felt like being one suited me :)
+    
+    As a character, Perry is friendly, sweet, excitable and likes attention,, he enjoys nature & landscapes . likes being held and pet ,, plays roguelike/lites and 3d platformers, listens to jazz and various vgm; the art guy .
 ode:
   name: Ode
   colour: "#43385C"
-  stroke: "#8F88DF"
+  stroke: "#9085E4"
   flags:
-    - canada
     - bi
+    - canada
   species: White-tailed deer
   pronouns: he/him
   gender: Male
@@ -31,8 +31,256 @@ ode:
   height: 5' 10"
   smell: Pine needles
   bio: |
-    Ode's bio here...
-    and it's also multiline
-    yay :>
+    Ode is my other fursona, in the sense that he represents the other parts of my personality ! He is a deer because that's the animal I originally conceived my fursona as, before I had made Perry . Ode is not the exact opposite of Perry ,, he's unique in his own ways . has an astronomy theme going with him also
+    
+    Ode is more shy and an introvert , but super chill tho ,, he's quiet but can go on tangents, particularly with stuff that interests him . gains a lot of confidence only if he feels comfortable, so it's good to be affectionate towards him . plays fps and puzzle games, also retro games . listens to ambient, jungle and DnB; the programmer guy .
 # ---------------- UNTITLED UNIVERSE -------------------
+ameth:
+  name: Ameth
+  colour: ""
+  stroke: ""
+  flags:
+    - gay
+    - greece
+  species: Bear dog (prehistoric)
+  pronouns: he/him
+  gender: Male
+  age: Late 20s?
+  height: 6' 9"
+  smell: Carpet
+  bio: |
+    Coming soon...
+arwe:
+  name: "Arwe (Ar&#447;e)"
+  colour: ""
+  stroke: ""
+  flags:
+    - pan
+    # - dragon
+  species: Dragon
+  pronouns: she/her
+  gender: Female
+  age: ~700 years old
+  height: 9' 8"
+  smell: Moisturizing cream
+  bio: |
+    Coming soon...
+calx:
+  name: Calx
+  colour: ""
+  stroke: ""
+  flags:
+    - lesbian
+    - canada
+  species: Lynx
+  pronouns: she/her
+  gender: Female
+  age: Early 30s
+  height: 6' 1"
+  smell: Pancakes w/ syrup
+  bio: |
+    Coming soon...
+cy:
+  name: Cy
+  colour: ""
+  stroke: ""
+  flags:
+    - lesbian
+    - canada
+  species: Steller's jay
+  pronouns: she/her
+  gender: Female
+  age: Early 30s
+  height: 6' 2"
+  smell: Blueberry jam
+  bio: |
+    Coming soon...
+fruity:
+  name: Fruity (Fruitopia)
+  colour: ""
+  stroke: ""
+  flags:
+    - gay
+    - canada
+  species: Labrador retriever
+  pronouns: he/him
+  gender: Male
+  age: Early 20s
+  height: 5' 9"
+  smell: Dog
+  bio: |
+    Coming soon...
+lav:
+  name: Lav
+  colour: ""
+  stroke: ""
+  flags:
+    - agender
+    # - dragon
+  species: Dragon
+  pronouns: they/it
+  gender: None
+  age: Unknown
+  height: 10' 0"
+  smell: Lavender
+  bio: |
+    Coming soon...
+nec:
+  name: Nec (Necahual)
+  colour: ""
+  stroke: ""
+  flags:
+    - pan
+    - nahua
+  species: Lemon shark
+  pronouns: she/her
+  gender: Female
+  age: Mid-20s
+  height: 6' 5"
+  smell: Lemon & lime
+  bio: |
+    Coming soon...
+nix:
+  name: Nix
+  colour: ""
+  stroke: ""
+  flags:
+    - nb
+    - ace
+    # - proto
+  species: Protogen
+  pronouns: vi/vim/vir or they/them
+  gender: Non-binary
+  age: 21
+  height: 5' 6"
+  smell: Overheating laptop
+  bio: |
+    Coming soon...
+pepp:
+  name: Pepp
+  colour: ""
+  stroke: ""
+  flags:
+    - trans
+    - bi
+    - usa
+  species: Australian shepherd?
+  pronouns: he/him
+  gender: Male
+  age: Early 30s
+  height: 6' 0"
+  smell: The beach!!!
+  bio: |
+    Coming soon...
+rey:
+  name: Rey
+  colour: ""
+  stroke: ""
+  flags:
+    - gay
+    - demi
+    - brazil
+  species: Toco toucan
+  pronouns: he/him
+  gender: Male
+  age: Mid-20s
+  height: 6' 7"
+  smell: Oranges
+  bio: |
+    Coming soon...
 # ---------------- LYNNAE RIDGE -------------------
+august:
+  name: August Phoenix
+  colour: ""
+  stroke: ""
+  flags:
+    - nb
+    - pan
+    - uk
+    - canada
+  species: Red-winged blackbird
+  pronouns: they/them
+  gender: Non-binary
+  age: 17
+  height: 6' 3"
+  smell: Cherry-flavoured coughdrops
+  bio: |
+    Coming soon...
+joe:
+  name: Joe Torr-Puroshin
+  colour: ""
+  stroke: ""
+  flags:
+    - pan
+    - japan
+    - canada
+  species: Raccoon
+  pronouns: he/him
+  gender: Male
+  age: 17
+  height: 5' 3"
+  smell: Trouble
+  bio: |
+    Coming soon...
+lars:
+  name: Lars DeLaurier
+  colour: ""
+  stroke: ""
+  flags:
+    - straight
+    - quebec
+  species: Ring-billed gull
+  pronouns: he/him
+  gender: Male
+  age: 19
+  height: 6' 0"
+  smell: Coconut
+  bio: |
+    Coming soon...
+latra:
+  name: Latra Kaninsky
+  colour: ""
+  stroke: ""
+  flags:
+    - trans
+    - straight
+    - russia
+    - canada
+  species: Coyote
+  pronouns: she/her
+  gender: Female
+  age: 19
+  height: 6' 1"
+  smell: Coffee
+  bio: |
+    Coming soon...
+mipha:
+  name: Mipha Memphis
+  colour: ""
+  stroke: ""
+  flags:
+    - ace
+    - usa
+  species: Striped skunk
+  pronouns: she/her
+  gender: Female
+  age: 16
+  height: 5' 3"
+  smell: More trouble
+  bio: |
+    Coming soon...
+delfi:
+  name: Delfi Orfido
+  colour: ""
+  stroke: ""
+  flags:
+    - unknown
+    - canada
+  species: Opossum
+  pronouns: she/her
+  gender: Female
+  age: 17
+  height: ...
+  smell: ...
+  bio: |
+    ...

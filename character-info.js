@@ -10,6 +10,7 @@ var selectedSmell = document.getElementById("smell");
 var selectedBio = document.getElementById("bio");
 var selectedPortrait = document.getElementById("portrait");
 var selectedFlags = document.getElementById("character-flags");
+var selectedDisplayIcon = document.getElementById("display-icon");
 
 var characters;
 
@@ -35,11 +36,15 @@ icons.forEach(icon => {
 
         selectedPortrait.src = `/portraits/${attrName}.png`;
         selectedPortrait.setAttribute("alt", oc.name);
+        selectedPortrait.setAttribute("title", oc.name);
+        selectedDisplayIcon.src = `/icons/${attrName}.png`;
+        selectedDisplayIcon.setAttribute("alt", oc.name);
+        selectedDisplayIcon.setAttribute("title", oc.name);
         selectedFlags.innerHTML = "";
 
         for (const flag of oc.flags) {
             var li = document.createElement("li");
-            li.innerHTML = `<img class="flag" src="/flags/${flag}-flag.png" alt="${flag}">`;
+            li.innerHTML = `<img class="flag" src="/flags/${flag}-flag.png" alt="${flag}" title="${flag}">`;
             selectedFlags.append(li);
         }
 

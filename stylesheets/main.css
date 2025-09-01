@@ -37,10 +37,13 @@
 
 body {
   color: var(--main-text);
+  font-size: 12pt;
   font-family: "Courier New", Courier, monospace;
   background-color: var(--offwhite);
   background-image: url("/assets/light-bg.png");
   background-repeat: repeat-y;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 a:link {
@@ -119,8 +122,7 @@ button, input, select {
 }
 
 .arrow-list li::before {
-  content: '🡒';
-  font-size: 10pt;
+  content: '\2192';
 }
 
 .theme-switch {

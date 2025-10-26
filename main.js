@@ -63,7 +63,7 @@ function setColours() {
     // set header image and buttons
     var top = document.getElementById("top");
     top.innerHTML = `
-        <img class="header" src="/assets/header-${theme}.png">
+        <img class="header" src="/assets/header-${theme}.webp">
         <img class="nav" src="/assets/nav-${theme}.png" usemap="#navmap">
         <map name="navmap">
         <area alt="Home" title="Home" href="/index.html" coords="0,100,100,0,279,0,179,100" shape="poly">

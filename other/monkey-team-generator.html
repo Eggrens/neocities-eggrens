@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTD6 Monkey Team Generator</title>
+    <link
+      href="/stylesheets/monkey_team.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <script src="/js-yaml.min.js"></script>
+  </head>
+  <body>
+    <div id="top"></div>
+    <div class="main">
+      <center>
+        <h1>BTD6 Monkey Team Generator</h1>
+      </center>
+      <p>
+        This is a tool to generate Monkey Teams for BTD6,, click the "Generate" button to generate a random team .
+        You can toggle "Pick random path" if you want a random upgrade path generated for each monkey too .
+      </p>
+      <div class="generator">
+        <div class="controls">
+          <input type="checkbox" id="pick-paths" name="pick-paths"/>
+          <label for="pick-paths">Pick random path</label>
+          <button id="generate" class="generate clickable">Generate</button>
+        </div>
+        <div class="team">
+            <table>
+                <tr class="monkey-portraits">
+                    <td><img class="monkey-portrait" src="btd6-portraits/BTD6_bloon_Red.png" alt="No monkey selected"></td>
+                    <td><img class="monkey-portrait" src="btd6-portraits/BTD6_bloon_Red.png" alt="No monkey selected"></td>
+                    <td><img class="monkey-portrait" src="btd6-portraits/BTD6_bloon_Red.png" alt="No monkey selected"></td>
+                </tr>
+                <tr class="monkey-details">
+                    <td>
+                        <ul class="monkey-info">
+                            <li class="monkey-name">No Monkey Selected</li>
+                            <li class="monkey-path">X-X-X</li>
+                            <li class="monkey-path-name">???</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="monkey-info">
+                            <li class="monkey-name">No Monkey Selected</li>
+                            <li class="monkey-path">X-X-X</li>
+                            <li class="monkey-path-name">???</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="monkey-info">
+                            <li class="monkey-name">No Monkey Selected</li>
+                            <li class="monkey-path">X-X-X</li>
+                            <li class="monkey-path-name">???</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+      </div>
+
+      <p>All monkey portraits were sourced from <a href="https://bloonswiki.com">Bloons Wiki</a>.</p>
+    </div>
+    <script src="/main.js"></script>
+    <script src="monkey-team.js"></script>
+  </body>
+</html>

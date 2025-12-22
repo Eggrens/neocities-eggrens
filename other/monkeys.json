@@ -1,0 +1,179 @@
+{
+  "monkeys": [
+    {
+      "name": "Dart Monkey",
+      "portrait": "BTD6_000-DartMonkey.png",
+      "top_path": "Ultra-Juggernaut",
+      "mid_path": "Plasma Monkey Fan Club",
+      "bot_path": "Crossbow Master"
+    },
+    {
+      "name": "Boomerang Monkey",
+      "portrait": "BTD6_000-BoomerangMonkey.png",
+      "top_path": "Glaive Lord",
+      "mid_path": "Perma Charge",
+      "bot_path": "MOAB Domination"
+    },
+    {
+      "name": "Bomb Shooter",
+      "portrait": "BTD6_000-BombShooter.png",
+      "top_path": "Bloon Crush",
+      "mid_path": "MOAB Eliminator",
+      "bot_path": "Bomb Blitz"
+    },
+    {
+      "name": "Tack Shooter",
+      "portrait": "BTD6_000-TackShooter.png",
+      "top_path": "Inferno Ring",
+      "mid_path": "Super Maelstrom",
+      "bot_path": "The Tack Zone"
+    },
+    {
+      "name": "Ice Monkey",
+      "portrait": "BTD6_000-IceMonkey.png",
+      "top_path": "Super Brittle",
+      "mid_path": "Absolute Zero",
+      "bot_path": "Icicle Impale"
+    },
+    {
+      "name": "Glue Gunner",
+      "portrait": "BTD6_000-GlueGunner.png",
+      "top_path": "The Bloon Solver",
+      "mid_path": "Glue Storm",
+      "bot_path": "Super Glue"
+    },
+    {
+      "name": "Desperado",
+      "portrait": "BTD6_000-Desperado.png",
+      "top_path": "The Blazing Sun",
+      "mid_path": "Golden Justice",
+      "bot_path": "The Desert Phantom"
+    },
+    {
+      "name": "Sniper Monkey",
+      "portrait": "BTD6_000-SniperMonkey.png",
+      "top_path": "Cripple MOAB",
+      "mid_path": "Elite Sniper",
+      "bot_path": "Elite Defender"
+    },
+    {
+      "name": "Monkey Sub",
+      "portrait": "BTD6_000-MonkeySub.png",
+      "top_path": "Energizer",
+      "mid_path": "Pre-emptive Strike",
+      "bot_path": "Sub Commander"
+    },
+    {
+      "name": "Monkey Buccaneer",
+      "portrait": "BTD6_000-MonkeyBuccaneer.png",
+      "top_path": "Carrier Flagship",
+      "mid_path": "Pirate Lord",
+      "bot_path": "Trade Empire"
+    },
+    {
+      "name": "Monkey Ace",
+      "portrait": "BTD6_000-MonkeyAce.png",
+      "top_path": "Sky Shredder",
+      "mid_path": "Tsar Bomba",
+      "bot_path": "Flying Fortress"
+    },
+    {
+      "name": "Heli Pilot",
+      "portrait": "BTD6_000-HeliPilot.png",
+      "top_path": "Apache Prime",
+      "mid_path": "Special Poperations",
+      "bot_path": "Comanche Commander"
+    },
+    {
+      "name": "Mortar Monkey",
+      "portrait": "BTD6_000-MortarMonkey.png",
+      "top_path": "The Biggest One",
+      "mid_path": "Pop and Awe",
+      "bot_path": "Blooncineration"
+    },
+    {
+      "name": "Dartling Gunner",
+      "portrait": "BTD6_000-DartlingGunner.png",
+      "top_path": "Ray of Doom",
+      "mid_path": "M.A.D",
+      "bot_path": "Bloon Exclusion Zone"
+    },
+    {
+      "name": "Wizard",
+      "portrait": "BTD6_000-Wizard.png",
+      "top_path": "Archmage",
+      "mid_path": "Wizard Lord Phoenix",
+      "bot_path": "Prince of Darkness"
+    },
+    {
+      "name": "Super Monkey",
+      "portrait": "BTD6_000-SuperMonkey.png",
+      "top_path": "True Sun God",
+      "mid_path": "The Anti-Bloon",
+      "bot_path": "Legend of the Night"
+    },
+    {
+      "name": "Ninja Monkey",
+      "portrait": "BTD6_000-NinjaMonkey.png",
+      "top_path": "Grandmaster Ninja",
+      "mid_path": "Grand Saboteur",
+      "bot_path": "Master Bomber"
+    },
+    {
+      "name": "Alchemist",
+      "portrait": "BTD6_000-Alchemist.png",
+      "top_path": "Permanent Brew",
+      "mid_path": "Total Transformation",
+      "bot_path": "Bloon Master Alchemist"
+    },
+    {
+      "name": "Druid",
+      "portrait": "BTD6_000-Druid.png",
+      "top_path": "Monarch of Storms",
+      "mid_path": "Spirit of the Forest",
+      "bot_path": "Avatar of Wrath"
+    },
+    {
+      "name": "Mermonkey",
+      "portrait": "BTD6_000-Mermonkey.png",
+      "top_path": "Lord of the Abyss",
+      "mid_path": "Popseidon",
+      "bot_path": "The Final Harmonic"
+    },
+    {
+      "name": "Banana Farm",
+      "portrait": "BTD6_000-BananaFarm.png",
+      "top_path": "Banana Central",
+      "mid_path": "Monkey-Nomics",
+      "bot_path": "Monkey Wall Street"
+    },
+    {
+      "name": "Spike Factory",
+      "portrait": "BTD6_000-SpikeFactory.png",
+      "top_path": "Super Mines",
+      "mid_path": "Carpet of Spikes",
+      "bot_path": "Perma-Spike"
+    },
+    {
+      "name": "Monkey Village",
+      "portrait": "BTD6_000-MonkeyVillage.png",
+      "top_path": "Primary Expertise",
+      "mid_path": "Homeland Defense",
+      "bot_path": "Monkeyopolis"
+    },
+    {
+      "name": "Engineer Monkey",
+      "portrait": "BTD6_000-EngineerMonkey.png",
+      "top_path": "Sentry Champion",
+      "mid_path": "Ultraboost",
+      "bot_path": "XXXL Trap"
+    },
+    {
+      "name": "Beast Handler",
+      "portrait": "BTD6_000-BeastHandler.png",
+      "top_path": "Megalodon",
+      "mid_path": "Giganotosaurus",
+      "bot_path": "Pouākai"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+@import "main.css";
+
+p {
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.generator {
+    width: 750px;
+    margin: auto;
+    display: block;
+}
+
+.controls {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.generate {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 12pt;
+}
+
+.team {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+table {
+    table-layout: fixed;
+}
+
+table td {
+    width: 250px;
+    min-height: 250px;
+    background-color: var(--secondary);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.monkey-portraits td {
+    background-color: var(--tertiary);
+}
+
+.monkey-name {
+    font-weight: bold;
+    text-shadow: 0px 2px 1px var(--link-hover);
+}
+
+.monkey-info {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.monkey-portrait {
+    max-width: 250px;
+    max-height: 250px;
+    display: block;
+    margin: auto;
+}

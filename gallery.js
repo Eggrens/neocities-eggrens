@@ -109,8 +109,7 @@ function makeGallery(sort, tags) {
     // if gallery has no results in it, display a message showing no results found
     if (galleryDiv.innerHTML == "") {
         let msg = document.createElement('p');
-        var msgColor = getComputedStyle(document.body).getPropertyValue("--light-bg");
-        msg.style.color = msgColor;
+        msg.className = "none-found";
         msg.innerHTML = "No results found :&lpar;";
         galleryDiv.append(msg);
     }

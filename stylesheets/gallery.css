@@ -1,8 +1,12 @@
 @import "main.css";
 
 em {
-  color: var(--tertiary);
+  color: var(--link);
   font-weight: bold;
+}
+
+p.none-found {
+  color: var(--link-hover)
 }
 
 .gallery {

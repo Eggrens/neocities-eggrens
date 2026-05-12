@@ -34,31 +34,14 @@ window.addEventListener("click", (event) => {
     }
 });
 
-// fetch version of gallery
-fetch("/gallery-version.txt")
-.then((response) => response.text())
-.then((text) => {
-    lines = text.split(/\r\n|\n/);
-    galleryVersion = lines[0];
-    const galleryUpdated = lines[1];
-    document.getElementById("gallery-last-updated").innerText = "Gallery last updated: " + galleryUpdated;
-});
-
 function buildGallery(init) {
-    const prevVersion = localStorage.getItem("galleryVersion");
-
-    // store gallery data if not defined yet, or version number does not match
-    if (!localStorage.hasOwnProperty("galleryData") || prevVersion !== galleryVersion) {
-        localStorage.setItem("galleryData", JSON.stringify(init));
-        localStorage.setItem("galleryVersion", galleryVersion);
-        console.log("new data loaded!");
-        console.log("old version: " + prevVersion + "  |  new version: " + galleryVersion);
-    }
+    localStorage.setItem("galleryData", JSON.stringify(init));
+    document.getElementById("gallery-last-updated").innerText = "Gallery last updated: " + init.updated;
 }
 
 function makeGallery(sort, tags) {
     // use copy of sorted gallery data for sorting and filtering
-    var data = JSON.parse(localStorage.getItem("galleryData"));
+    var data = JSON.parse(localStorage.getItem("galleryData")).arts;
     data.sort(sort);
 
     galleryDiv.innerHTML = "";
@@ -84,11 +67,10 @@ function makeGallery(sort, tags) {
         let artwork = document.createElement('div');
         artwork.className = "artwork clickable";
         artwork.id = art.id;
-        const images = art.image.split("|");
-        const captions = art.caption.split("|");
+        const images = art.images;
 
         artwork.innerHTML = `
-        <img class="thumb" src="/gallery-images/${images[0]}" title="${captions[0]}" />
+        <img class="thumb" src="/gallery-images/${images[0].file}" title="${images[0].caption}" />
         <div class="info">
             <table class="date-and-num">
                 <td class="date">${art.date}</td>
@@ -105,15 +87,18 @@ function makeGallery(sort, tags) {
         artwork.addEventListener('click', (event) => {
             const id = parseInt(event.currentTarget.id);
             const galleryData = JSON.parse(localStorage.getItem("galleryData"));
-            const refArt = galleryData[id];
-            carouselImages = refArt.image.split("|");
-            carouselCaptions = refArt.caption.split("|");
+            const refArt = galleryData.arts[id];
+            carouselImages = refArt.images;
             carouselId = 0;
 
             modalTitle.innerText = refArt.title;
             modalDate.innerText = refArt.date;
             modalTags.innerText = refArt.tags;
-            if (carouselImages.length > 1) modalButtons.style.display = "block";
+            if (carouselImages.length > 1) {
+                modalButtons.style.display = "block";
+            } else {
+                modalButtons.style.display = "none";
+            }
             refreshModal();
             modal.style.display = "block";
         });
@@ -132,12 +117,14 @@ function makeGallery(sort, tags) {
 }
 
 function refreshModal() {
-    buttonPrev.disabled = carouselId == 0 ? true : false;
-    buttonNext.disabled = carouselId == carouselImages.length-1 ? true : false;
+    buttonPrev.disabled = carouselId == 0;
+    buttonNext.disabled = carouselId == carouselImages.length-1;
+    imagePath = carouselImages[carouselId].file
+    imageCaption = carouselImages[carouselId].caption
 
-    modalCaption.innerText = carouselCaptions[carouselId];
-    modalLink.setAttribute("href", "/gallery-images/" + carouselImages[carouselId]);
-    modalLink.innerHTML = `<img class="big" src="/gallery-images/${carouselImages[carouselId]}" title="${carouselCaptions[carouselId]}" />`;
+    modalCaption.innerText = imageCaption;
+    modalLink.setAttribute("href", "/gallery-images/" + imagePath);
+    modalLink.innerHTML = `<img class="big" src="/gallery-images/${imagePath}" title="${imageCaption}" />`;
 }
 
 buttonPrev.addEventListener("click", function() {
@@ -180,18 +167,11 @@ function searchGallery() {
     }
 }
 
-fetch("/gallery.csv")
-.then((response) => response.text())
-.then((text) => {
-    Papa.parse(text, {
-        header: true,
-        skipEmptyLines: true,
-        complete: function (results) {
-            // make gallery once results fetched
-            buildGallery(results.data);
-            searchGallery();
-        }
-    });
+fetch("/gallery.json")
+.then((response) => response.json())
+.then((json) => {
+    buildGallery(json);
+    searchGallery();
 });
 
 gallerySort.addEventListener("change", (event) => {

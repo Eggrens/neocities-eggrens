@@ -28,3 +28,8 @@ a:visited {
 a:hover {
   color: white;
 }
+
+em {
+  font-size: 11pt;
+  font-style: italic;
+}

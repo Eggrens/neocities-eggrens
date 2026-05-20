@@ -9,15 +9,30 @@
 </head>
 <body>
     <!-- Add new stuff to log here -->
-    <h1 class="log-title">Gallery Changes</h1>
-    <h3 class="log-date">2026-05-12</h3>
+    <h1 class="log-title">Gallery Update</h1>
+    <h3 class="log-date">2026-05-20</h3>
     <p>
-        Small update to the gallery,, Images are now .png instead of .webp, except for animated ones which are still .webp cuz it compresses nicer.
-        This does result in images loading slower of course, but whatever,, when I made the gallery images webp at first, it was because I wanted the site to be super optimized n performant
-        n stuff. But like, this is Neocities lol, it does not matter here,, most people are gonna view this on a desktop anyways, if the image loading is slow who cares.
-        I'm not designing this site for mobile in mind (at least not planning to), and if I do then I can worry about loading smaller webps/jpegs for mobile users.
-        I also wanted to change to png just cuz that's a nicer format for most people! And it means I don't have to do any conversion myself, cuz all my art gets saved as png.
-        I'd also wanna improve the site's code at some point but that's for another time :3
+        Gallery has been updated a little bit,, Images (except animated ones, which are still .webp) are all .png now. note that it will now take longer to load the gallery at first, especially on mobile it seems. i might change that in the future and use smaller webps/jpgs to be the thumbnails in the gallery, while still loading pngs when you click to view art.
+        <br><br>
+        i did this because i wasn't really happy with everything being webps,, while it does load faster on the site, this means i had to convert images from png to webp before uploading. this was done automatically for me with the tool i had made to upload stuff to the site, but i don't think i really need the size to be that optimized and have to deal with webps being annoying to use lol. can you imagine if i lost all my art and i had to download them from my site, and they're all webps lol
+        <br><br>
+        Also, while it's not related to the site, I've finished upgrading my web-based tool to upload stuff to the site! This has been in the works for almost the whole month, but it's finally done and working and i'm happy with it,, I can easily upload images, give em titles, dates, tags, captions, etc, save my progress if i'm adding a bunch of stuff at once, and upload it to here by API request :3 it's pretty neat . the new tool is much more lightweight than my previous one..
+        <br><br>
+        <em>
+            (
+            for those who are interested, i had previously made a Ruby on Rails-based that let me add artwork, upload images to them, change title, tags and stuff and then send
+            them to neocities. but it was really bloated with clutter i didn't need, since Rails likes to generate files and stuff for you that are not always needed. plus it was unstyled and looked
+            like really ugly lol. so i went on a little journey around the beginning of May to learn wxRuby3, which is a Ruby wrapper for the wxWidgets C++ GUI library because I wanted to learn
+            how to make GUI programs, and maybe use that instead of a web-based tool.. so i learned it for a bit, had an alright time until I ran into some weird jank that i could not
+            find any way to fix, and it sucked! wxWidgets is very neat but all the solutions i could find did not help me, and it didn't help that i was using a wrapper which could have it's own issues,,
+            So i said fuck it and decided to go back to web-based, but not with Rails, instead using Sinatra which is a lightweight Ruby framework to make HTTP servers.. it took a bit to learn this as well, and since it's
+            lightweight it meant that i had to do some things myself and miss out on features i did have previously. for example, i chose not to use a database since like, i didn't really need one and it would
+            make things more complicated than just storing images on disk and writing changes to a file. but anyways, I'm really happy with my Sinatra thing, I think it works great and looks pretty even :3
+            )
+        </em>
+        <br><br>
+        On a final note, I added some older artwork that weren't uploaded here for whatever reason, see if u can find them. I definitely wanna upload some more old art here, but I should implement some sort of paging system before
+        I do that, otherwise it's gonna take ages to load the gallery page lol.
     </p>
 
     <h1 class="log-title">Added BTD6 Monkey Team Generator</h1>

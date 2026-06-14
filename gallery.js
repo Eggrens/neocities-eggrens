@@ -85,9 +85,9 @@ function makeGallery(sort, tags) {
 
         // when artwork clicked, show modal
         artwork.addEventListener('click', (event) => {
-            const id = parseInt(event.currentTarget.id);
+            const id = event.currentTarget.id;
             const galleryData = JSON.parse(localStorage.getItem("galleryData"));
-            const refArt = galleryData.arts[id];
+            const refArt = galleryData.arts.find(x => x.id === id);
             carouselImages = refArt.images;
             carouselId = 0;
 

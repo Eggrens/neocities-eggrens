@@ -34,7 +34,7 @@ icons.forEach(icon => {
         selectedName.style.color = oc.colour;
         selectedName.style.webkitTextStrokeColor = oc.stroke;
 
-        selectedPortrait.src = `/portraits/${attrName}.png`;
+        selectedPortrait.src = `/portraits/${attrName}.jpg`;
         selectedPortrait.setAttribute("alt", oc.name);
         selectedPortrait.setAttribute("title", oc.name);
         selectedDisplayIcon.src = `/icons/${attrName}.png`;

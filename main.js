@@ -78,7 +78,7 @@ function setColours() {
     var forumPortrait = document.getElementById("forum-portrait");
     var forumSpecies = document.getElementById("forum-species");
     if (forumPortrait && forumSpecies) {
-        forumPortrait.src = theme === "dark" ? "/portraits/ode.png" : "/portraits/perry.png";
+        forumPortrait.src = theme === "dark" ? "/portraits/ode.jpg" : "/portraits/perry.jpg";
         forumSpecies.innerText = "Species: " + (theme === "dark" ? "White-tailed deer" : "Canada jay");
     }
 }

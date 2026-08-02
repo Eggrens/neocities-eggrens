@@ -54,7 +54,7 @@ icons.forEach(icon => {
         selectedAge.innerHTML = oc.age;
         selectedHeight.innerHTML = oc.height;
         selectedSmell.innerHTML = oc.smell;
-        selectedBio.innerText = oc.bio;
+        selectedBio.innerHTML = oc.bio;
         this.src = `/icons/${attrName}-rotate.gif`;
         lastIconClicked = this;
     });

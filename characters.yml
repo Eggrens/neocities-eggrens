@@ -12,10 +12,10 @@ perry:
   gender: Male
   age: My age :>
   height: 5' 10"
-  smell: Snow?
+  smell: Raspberry
   bio: |
     Perry is my primary fursona ,, but he wasn't at first ! He was originally a random OC, even having a last name at first (I used to follow a naming convention for OCs where I'd derive a first and last name based off of their species name). I eventually adopted him as my main fursona cuz I love birds & felt like being one suited me :)
-    
+
     As a character, Perry is friendly, sweet, excitable and likes attention,, he enjoys nature & landscapes . likes being held and pet ,, plays roguelike/lites and 3d platformers, listens to jazz and various vgm; the art guy .
 ode:
   name: Ode
@@ -32,7 +32,7 @@ ode:
   smell: Pine needles
   bio: |
     Ode is my other fursona, in the sense that he represents the other parts of my personality ! He is a deer because that's the animal I originally conceived my fursona as, before I had made Perry . Ode is not the exact opposite of Perry ,, he's unique in his own ways . has an astronomy theme going with him also
-    
+
     Ode is more shy and an introvert , but super chill tho ,, he's quiet but can go on tangents, particularly with stuff that interests him . gains a lot of confidence only if he feels comfortable, so it's good to be affectionate towards him . plays fps and puzzle games, also retro games . listens to ambient, jungle and DnB; the programmer guy .
 # ---------------- UNTITLED UNIVERSE -------------------
 ameth:
@@ -51,9 +51,9 @@ ameth:
   bio: |
     Coming soon...
 arwe:
-  name: "Arwe (Ar&#447;e)"
-  colour: ""
-  stroke: ""
+  name: "Arwe (Ar&#x1bf;e)"
+  colour: "#1E5B52"
+  stroke: "#5CC1DB"
   flags:
     - pan
     # - dragon
@@ -62,9 +62,16 @@ arwe:
   gender: Female
   age: ~700 years old
   height: 9' 8"
-  smell: Moisturizing cream
+  smell: Campfire
   bio: |
-    Coming soon...
+    Arwe used to live in 14-15th century England among other dragons, living in harmony with humans. She gets her name from the old English word for 'arrow' (arwe), due to the arrow-like patterns on her scales.
+    Tensions grew between dragons and humans, forcing the once peaceful dragon nation to retaliate against human attacks, burning down their settlements with their fire breathing. The war raged on, and Arwe had no choice but to leave her home.
+    Wounded, she stumbled into a hidden cave and laid there to hide and rest. Through some unexplained force, she hibernated for centuries, eventually waking up in the modern day.
+
+    She now finds herself lost in the modern world, among other anthro animal species who had developed alongside humans. There still is a dragon population, but much fewer in number compared to her time.
+    Since her awakening, Arwe strives to understand this new world with each passing day, learning the customs, making friends, and preserving what's left of her dragon culture. She enjoys having guests over for a huge medieval-style feast once in a while.
+
+    Arwe speaks in a Middle English-like accent. I like to show this by using old English letters (such as wynn [&#x1bf;], thorn [&#xfe;], eth [&#xf0;] and yogh [&#x21d;]) in her speech, since dragon scribes in her time kept these letters that had gone out of fashion from the language.
 calx:
   name: Calx
   colour: ""
@@ -142,8 +149,8 @@ nec:
     Coming soon...
 nix:
   name: Nix
-  colour: ""
-  stroke: ""
+  colour: "#E8E2E5"
+  stroke: "#726F71"
   flags:
     - nb
     - ace
@@ -155,11 +162,13 @@ nix:
   height: 5' 6"
   smell: Overheating laptop
   bio: |
-    Coming soon...
+    Nix is a silly, chubby protogen, running on the latest release of protOS, an Ubuntu-like operating system. Nix has neopronouns (vi/vim/vir) inspired by the text editors 'vi' and 'vim', but vi also uses they/them occasionally.
+
+    Vi can be used like a computer of sorts, coming equipped with a Bash shell you can type into on vir visor (a keyboard must be plugged into a hidden port on it). But please treat vim with care,, don't execute any dangerous commands...
 pepp:
   name: Pepp
-  colour: ""
-  stroke: ""
+  colour: "#F3EFDC"
+  stroke: "#2D2623"
   flags:
     - trans
     - bi
@@ -167,11 +176,17 @@ pepp:
   species: Australian shepherd?
   pronouns: he/him
   gender: Male
-  age: Early 30s
+  age: Early 40s
   height: 6' 0"
   smell: The beach!!!
   bio: |
-    Coming soon...
+    Used to be a rather famous actress in his 20s, appearing on TV & magazine front pages, notably having a special interest in pop/soda. Eventually, he accrued enough wealth to purchase a beachfront property. Though, he never truly felt himself in the body of an actress, being seen and perceived as a peak figure of femininity.
+    He enjoyed acting, but felt obligated that he had to keep this pretty, feminine shell, lest it upset the public. Eventually, this lifestyle grew to be too much for him, so he cut ties with Hollywood and lived a life of reclusivity for a while.
+
+    After a few years, he eventually took on some voice acting work to pay the bills that had been piling up, taking any role he could. Curiously, he felt the most comfortable playing male characters.
+    He started experimenting with masculine attire, training his voice to become deeper. This warmth he felt with masculinity led him to transition as male. His first on-screen appearance as a man was starring in a commercial for his favourite soda brand, Pupsi. Even though the commercial didn't do very well, he cherished the opportunity to finally play a man.
+
+    Since then, he's still living in his beach house, lazing about, drinking soda and catching plenty of rays, occasionally doing some acting work when he feels like it.
 rey:
   name: Rey
   colour: ""

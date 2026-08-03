@@ -26,16 +26,24 @@ em {
 
 .example-list {
     display: flex;
-    align-content: center;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    height: 650px;
+}
+
+.example-container {
+    height: 300px;
+    margin: 10px;
 }
 
 .example {
-    width: 275px;
-    margin: 10px;
+    height: 100%;
     border-radius: 20px;
     border: 5px solid var(--tertiary);
-    display: inline-block;
+}
+
+.comm-description {
+    width: 750px;
+    margin: auto;
 }

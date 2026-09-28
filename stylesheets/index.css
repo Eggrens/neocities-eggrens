@@ -94,6 +94,10 @@
   top: 0px;
 }
 
+#crow-stop, #crow-more {
+  margin: 10px;
+}
+
 #crow-land {
   width: 80%;
   height: 100%;

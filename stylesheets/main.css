@@ -65,7 +65,6 @@ body {
   column-gap: 15px;
   color: var(--text);
   background: var(--bg);
-  font-size: 12pt;
   font-family: "Unifont", Courier, monospace;
   /* Remove these once website is responsive for mobile */
   text-size-adjust: 100%;

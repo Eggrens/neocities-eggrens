@@ -22,7 +22,7 @@
   display: block;
   width: 225px;
   border: solid 1px var(--tertiary);
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .username {
@@ -68,6 +68,11 @@
 
 .signature img {
   display: block;
+}
+
+.sig-msg {
+  font-size: small;
+  font-style: italic;
 }
 
 iframe {

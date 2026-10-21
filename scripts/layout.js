@@ -23,10 +23,10 @@ header.innerHTML = `
 var links = document.createElement("div");
 links.className = "links";
 links.innerHTML = `
-<a href="https://bsky.app/profile/eggrens.bsky.social"><img src="/assets/bluesky-icon.png" alt="Bluesky"></a>
-<a href="https://bsky.app/profile/denizendeerjay.bsky.social"><img src="/assets/bluesky-nsfw-icon.png" alt="Bluesky 18+"></a>
-<a href="https://eggrens.tumblr.com/"><img src="/assets/tumblr-icon.png" alt="Tumblr"></a>
-<a href="https://github.com/Eggrens"><img src="/assets/github-icon.png" alt="Github"></a>
+<a href="https://bsky.app/profile/eggrens.bsky.social"><img src="/assets/nav/bluesky-icon.png" alt="Bluesky"></a>
+<a href="https://bsky.app/profile/denizendeerjay.bsky.social"><img src="/assets/nav/bluesky-nsfw-icon.png" alt="Bluesky 18+"></a>
+<a href="https://eggrens.tumblr.com/"><img src="/assets/nav/tumblr-icon.png" alt="Tumblr"></a>
+<a href="https://github.com/Eggrens"><img src="/assets/nav/github-icon.png" alt="Github"></a>
 `;
 
 var nav = document.createElement("nav");

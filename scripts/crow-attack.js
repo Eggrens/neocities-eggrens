@@ -7,6 +7,43 @@ var crowContainer = document.getElementById("crow-container");
 var crowLand = document.getElementById("crow-land");
 var crowTemplate = document.getElementById("crow-template");
 
+var crowContainer = document.createElement("div");
+crowContainer.id = "crow-container";
+
+var crowControls = document.createElement("div");
+crowControls.id = "crow-controls";
+
+var crowLand = document.createElement("div");
+crowLand.id = "crow-land";
+
+var crowMsg = document.createElement("marquee");
+crowMsg.textContent = "Crow attack!";
+
+var crowButtonContainer = document.createElement("div");
+crowButtonContainer.id = "crow-button-container";
+
+var crowStop = document.createElement("button");
+crowStop.id = "crow-stop";
+crowStop.innerHTML = "Stop Crow Attack";
+
+var crowMore = document.createElement("button");
+crowMore.id = "crow-more";
+crowMore.innerHTML = "Uh-oh!";
+
+var crowMusic = document.createElement("audio");
+crowMusic.id = "crow-music";
+crowMusic.controls = true;
+crowMusic.src = "https://files.catbox.moe/xa6ymx.mp3";
+
+var trackMsg = document.createElement("span");
+trackMsg.id = "crow-track";
+trackMsg.innerHTML = "&#x266B; Survival Step - Tomonori Sawada, Sonic Riders OST";
+
+crowButtonContainer.append(crowStop, crowMore);
+crowControls.append(crowButtonContainer, crowMusic, trackMsg);
+crowContainer.append(crowControls, crowLand, crowMsg);
+document.body.append(crowContainer);
+
 function randomCoords() {
     const x = Math.floor(Math.random() * crowLand.offsetWidth);
     const y = Math.floor(Math.random() * crowLand.offsetHeight);
@@ -18,10 +55,11 @@ function randomHeight() {
 }
 
 function makeCrows() {
-    var crows = crowTemplate.cloneNode();
+    var crows = document.createElement("img");
+    crows.className = "crows";
+    crows.src = "/assets/crows.gif";
+
     var coords = randomCoords();
-    crows.removeAttribute("id");
-    crows.removeAttribute("hidden");
     crows.style.left = `${coords[0]}px`;
     crows.style.top = `${coords[1]}px`;
     crows.style.height = `${randomHeight()}px`;

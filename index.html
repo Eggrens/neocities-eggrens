@@ -8,82 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
   </head>
   <body>
-    <div id="crow-container">
-      <div id="crow-controls">
-        <button class="clickable" id="crow-stop">
-          Stop Crow Attack
-        </button>
-        <button class="clickable" id="crow-more">
-          Uh-oh!
-        </button>
-        <br>
-        <audio id="crow-music" controls src="https://files.catbox.moe/xa6ymx.mp3"></audio>
-        <br>
-        <span>&#x266B; Survival Step - Tomonori Sawada, Sonic Riders OST</span>
-      </div>
-      <div id="crow-land"></div>
-      <marquee id="crow-msg">
-        Crow attack!
-      </marquee>
-    </div>
-
-    <img src="/assets/crows.gif" id="crow-template" hidden class="crows" alt="crows">
-
-    <header>
-      <img id="header" class="header" src="/assets/header-perry.webp">
-      <div class="extra">
-        <div>
-          <div class="theme-picker">
-            <img class="clickable theme-button" id="themeTogglePerry" src="/icons/perry.png" title="Switch to Perry colour theme" alt="Perry">
-            <img class="clickable theme-button" id="themeToggleOde" src="/icons/ode.png" title="Switch to Ode colour theme" alt="Ode">
-          </div>
-        </div>
-        <div id="crow-start" class="fr clickable" alt="Crow Attack">
-          <img src="/assets/FunFind_crow_left.gif" alt="Crow Attack">
-        </div>
-      </div>
-    </header>
-    <div class="links">
-      <a href="https://bsky.app/profile/eggrens.bsky.social"><img src="/assets/bluesky-icon.png" alt="Bluesky"></a>
-      <a href="https://bsky.app/profile/denizendeerjay.bsky.social"><img src="/assets/bluesky-nsfw-icon.png" alt="Bluesky 18+"></a>
-      <a href="https://eggrens.tumblr.com/"><img src="/assets/tumblr-icon.png" alt="Tumblr"></a>
-      <a href="https://github.com/Eggrens"><img src="/assets/github-icon.png" alt="Github"></a>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li class="nav-section">Main Pages</li>
-        <ul class="nav-section-content">
-          <li>
-            <img class="nav-icon" src="/assets/placeholder.png">
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <img class="nav-icon" src="/assets/placeholder.png">
-            <a href="#">Art Gallery</a>
-          </li>
-          <li>
-            <img class="nav-icon" src="/assets/placeholder.png">
-            <a href="#">My Characters</a>
-          </li>
-          <li>
-            <img class="nav-icon" src="/assets/placeholder.png">
-            <a href="#">My Programming Stuff</a>
-          </li>
-          <li>
-            <img class="nav-icon" src="/assets/placeholder.png">
-            <a href="#">Commissions</a>
-          </li>
-        </ul>
-        <li class="nav-section">Other Pages</li>
-        <ul class="nav-section-content">
-          <li>
-            <img class="nav-icon" src="/assets/placeholder.png">
-            <a href="#">BTD6 Monkey Team Generator</a>
-          </li>
-        </ul>
-      </ul>
-    </nav>
-    <main>
+    <main id="main">
       <div class="forum">
         <div class="forum-info">
           <img id="forum-portrait" class="portrait" src="/portraits/perry.jpg">
@@ -150,10 +75,7 @@
       <iframe src="update_log.html" title="Update Log"></iframe>
     </main>
 
-    <footer>
-      <img style="height: 40px; margin-top: 10px;" src="/assets/neocities.png" alt="Hosted by Neocities">
-    </footer>
-
+    <script src="/scripts/layout.js"></script>
     <script src="/scripts/crow-attack.js"></script>
     <script src="/scripts/theme.js"></script>
     <script src="/scripts/lib/luxon.min.js"></script>

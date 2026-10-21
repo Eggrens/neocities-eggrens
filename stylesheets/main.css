@@ -272,14 +272,21 @@ footer {
 }
 
 #crow-controls {
+  display: flex;
+  flex-direction: column;
   z-index: 6;
   margin-left: 20px;
   width: fit-content;
 }
 
-#crow-controls > span {
+#crow-track {
   color: var(--text);
   text-shadow: 1px 1px var(--tertiary);
+}
+
+#crow-button-container {
+  display: flex;
+  gap: 10px;
 }
 
 #crow-stop, #crow-more {

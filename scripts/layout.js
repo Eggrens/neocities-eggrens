@@ -36,30 +36,30 @@ nav.innerHTML = `
     <ul class="nav-section-content">
         <li>
             <img class="nav-icon" src="/assets/placeholder.png">
-            <a href="#">Home</a>
+            <a href="/index.html">Home</a>
         </li>
         <li>
             <img class="nav-icon" src="/assets/placeholder.png">
-            <a href="#">Art Gallery</a>
+            <a href="/gallery.html">Art Gallery</a>
         </li>
         <li>
             <img class="nav-icon" src="/assets/placeholder.png">
-            <a href="#">My Characters</a>
+            <a href="/characters.html">My Characters</a>
         </li>
         <li>
             <img class="nav-icon" src="/assets/placeholder.png">
-            <a href="#">My Programming Stuff</a>
+            <a href="/projects.html">My Projects</a>
         </li>
         <li>
             <img class="nav-icon" src="/assets/placeholder.png">
-            <a href="#">Commissions</a>
+            <a href="/commissions.html">Commissions</a>
         </li>
     </ul>
     <li class="nav-section">Other Pages</li>
     <ul class="nav-section-content">
         <li>
             <img class="nav-icon" src="/assets/placeholder.png">
-            <a href="#">BTD6 Monkey Team Generator</a>
+            <a href="/other/monkey-team-generator.html">BTD6 Monkey Team Generator</a>
         </li>
     </ul>
 </ul>

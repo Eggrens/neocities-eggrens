@@ -1,47 +1,73 @@
 :root {
-  --offwhite: #E0E0E0;
-  --cyblack: #031D27;
-  --marblack: #27031d;
-  --grid: linear-gradient(to right, rgba(0,0,0, 0.6) 0 100%), url('/assets/grid.gif');
-  --grid-dark: linear-gradient(to right, rgba(39,3,29, 0.6) 0 100%), url('/assets/grid.gif');
+  /* ============= Theme Colours ============= */
+  --perry-base: #e0e0e0;
+  --perry-primary: #aad6be;
+  --perry-secondary: #7cc3c5;
+  --perry-tertiary: #428396;
+  --perry-text: #031d27;
+  --perry-bright: #3dffff;
+  --perry-link: #009dc0;
+  --perry-link-hover: #93fff6;
+  --perry-link-visited: #5662b2;
+  --perry-grid: linear-gradient(to right, rgba(0,0,0, 0.6) 0 100%), url('/assets/grid.gif'), var(--perry-text);
+  --perry-bg: var(--perry-base) repeat-y url('/assets/perry-bg.png');
 
-  /* light colours */
-  --stripe-one: #AAD6BE;
-  --stripe-two: #7CC3C5;
-  --stripe-three: #428396;
-  --link-one: green;
-  --link-two: olivedrab;
-  --link-three: cyan;
-  --shade: var(--cyblack);
+  --ode-base: #0f0e12;
+  --ode-primary: #5b429d;
+  --ode-secondary: #642566;
+  --ode-tertiary: #471143;
+  --ode-text: #dfd5ff;
+  --ode-bright: #ff3df2;
+  --ode-link: #ff30ba;
+  --ode-link-hover: #ff97e8;
+  --ode-link-visited: #9f1f3f;
+  --ode-grid: linear-gradient(to right, rgba(39,3,29, 0.6) 0 100%), url('/assets/grid.gif'), #27031d;
+  --ode-bg: var(--ode-base) repeat-y url('/assets/ode-bg.png');
 
-  /* dark colours */
-  --stripe-one-dark: #5B429D;
-  --stripe-two-dark: #642566;
-  --stripe-three-dark: #471143;
-  --link-one-dark: pink;
-  --link-two-dark: palevioletred;
-  --link-three-dark: deeppink;
-  --shade-dark: var(--marblack);
-
-  /* theme properties */
-  --primary: var(--stripe-one);
-  --secondary: var(--stripe-two);
-  --tertiary: var(--stripe-three);
-  --main-text: var(--cyblack);
-  --dark: var(--shade);
-  --link: var(--link-one);
-  --link-visited: var(--link-two);
-  --link-hover: var(--link-three);
-  --bg-grid: var(--grid);
+  /* ============= Theme Variables ============= */
+  --base:         var(--perry-base);
+  --primary:      var(--perry-primary);
+  --secondary:    var(--perry-secondary);
+  --tertiary:     var(--perry-tertiary);
+  --text:         var(--perry-text);
+  --bright:       var(--perry-bright);
+  --link:         var(--perry-link);
+  --link-hover:   var(--perry-link-hover);
+  --link-visited: var(--perry-link-visited);
+  --grid:         var(--perry-grid);
+  --bg:           var(--perry-bg);
 }
 
+/* ============= Ode Theme ============= */
+
+.theme-ode {
+  --base:         var(--ode-base);
+  --primary:      var(--ode-primary);
+  --secondary:    var(--ode-secondary);
+  --tertiary:     var(--ode-tertiary);
+  --text:         var(--ode-text);
+  --bright:       var(--ode-bright);
+  --link:         var(--ode-link);
+  --link-hover:   var(--ode-link-hover);
+  --link-visited: var(--ode-link-visited);
+  --grid:         var(--ode-grid);
+  --bg:           var(--ode-bg);
+}
+
+/* ============= Global Styles ============= */
+
 body {
-  color: var(--main-text);
+  display: grid;
+  width: fit-content;
+  margin: auto;
+  grid-template-columns: 1000px 300px ;
+  grid-template-rows: 250px 1fr 100px;
+  column-gap: 15px;
+  color: var(--text);
+  background: var(--bg);
   font-size: 12pt;
-  font-family: "Courier New", Courier, monospace;
-  background-color: var(--offwhite);
-  background-image: url("/assets/light-bg.png");
-  background-repeat: repeat-y;
+  font-family: "Unifont", Courier, monospace;
+  /* Remove these once website is responsive for mobile */
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -51,36 +77,11 @@ a:link {
 }
 
 a:visited {
-  color: var(--link-visited);
+  color: var(--link);
 }
 
 a:hover {
   color: var(--link-hover);
-}
-
-.header {
-  width: 1000px;
-  height: 333px;
-  display: block;
-  margin: auto;
-  margin-bottom: 0px;
-}
-
-.nav {
-  width: 1000px;
-  height: 100px;
-  display: block;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-.main {
-  margin: auto;
-  width: 1000px;
-  padding: 10px;
-  background-color: var(--primary);
-  border: solid 10px var(--tertiary);
-  border-radius: 20px;
 }
 
 .clearfix::after {
@@ -101,9 +102,130 @@ a:hover {
   cursor: pointer;
 }
 
-button, input, select {
-  color: var(--cyblack);
-  font-family: "Courier New", Courier, monospace;
+header {
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.header {
+  height: 250px;
+  display: block;
+}
+
+nav {
+  grid-row: 2;
+  grid-column: 2;
+  background-color: var(--primary);
+  border: solid 2px var(--tertiary);
+  border-radius: 5px;
+  align-self: start;
+  padding: 5px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-section {
+  background-color: var(--tertiary);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 5px 15px 5px;
+}
+
+.nav-section-content {
+  list-style-type: none;
+}
+
+.nav-section-content > li {
+  display: flex;
+  align-content: center;
+  height: fit-content;
+  line-height: 25px;
+  margin-bottom: 10px;
+  padding-right: 5px;
+}
+
+.nav-section-content > li:last-child {
+  margin-bottom: 20px;
+}
+
+.nav-icon {
+  display: inline-block;
+  height: 25px;
+  margin-right: 10px;
+}
+
+main {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: var(--primary);
+  border: solid 2px var(--tertiary);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+footer {
+  grid-row: 3;
+  grid-column: 1;
+  justify-self: center;
+}
+
+.extra {
+  display: flex;
+  height: 230px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.theme-picker {
+  display: flex;
+  width: fit-content;
+  background-color: var(--secondary);
+  padding: 5px;
+  border: solid 2px var(--tertiary);
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.theme-button {
+  filter: brightness(0.5)
+          drop-shadow(-1px -1px var(--text))
+          drop-shadow(1px -1px var(--text))
+          drop-shadow(-1px 1px var(--text))
+          drop-shadow(1px 1px var(--text));
+  height: 60px;
+}
+
+.theme-button:hover, .theme-button.active {
+  filter: brightness(1)
+          drop-shadow(-1px -1px var(--text))
+          drop-shadow(1px -1px var(--text))
+          drop-shadow(-1px 1px var(--text))
+          drop-shadow(1px 1px var(--text));
+}
+
+.links {
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-self: end;
+  gap: 5px;
+}
+
+.links img {
+  height: 50px;
+  border-radius: 5px;
 }
 
 .flag {
@@ -125,13 +247,55 @@ button, input, select {
   content: '\2192';
 }
 
-.theme-switch {
+/* ============= Crow Attack! ============= */
+
+#crow-msg {
+  background-color: rgba(100, 100, 100, 0.8);
+  color: yellow;
+  font-family: Arial;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  height: 30px;
+  font-size: 15pt;
+  padding-top: 5px;
 }
 
-.theme-icon {
-  width: 75px;
-  border-radius: 20px;
+#crow-container {
+  background: rgba(255, 255, 255, 0.4);
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#crow-controls {
+  z-index: 6;
+  margin-left: 20px;
+  width: fit-content;
+}
+
+#crow-controls > span {
+  color: var(--text);
+  text-shadow: 1px 1px var(--tertiary);
+}
+
+#crow-stop, #crow-more {
+  margin: 10px;
+}
+
+#crow-land {
+  width: 80%;
+  height: 100%;
+}
+
+#crow-template {
+  display: none;
+}
+
+.crows {
+  position: absolute;
+  z-index: -1;
 }

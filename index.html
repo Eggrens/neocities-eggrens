@@ -6,7 +6,6 @@
     <title>Eggrens World</title>
     <link href="/stylesheets/index.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <script src="luxon.min.js"></script>
   </head>
   <body>
     <div id="crow-container">
@@ -30,21 +29,70 @@
 
     <img src="/assets/crows.gif" id="crow-template" hidden class="crows" alt="crows">
 
-    <div id="top"></div>
-
-    <div class="main">
-      <p>
-        <center><em>Note: this site is best viewed on desktop!</em></center>
-      </p>
-      <div class="forum clearfix">
-        <div class="forum-info fl" style="width: 275px;">
+    <header>
+      <img id="header" class="header" src="/assets/header-perry.webp">
+      <div class="extra">
+        <div>
+          <div class="theme-picker">
+            <img class="clickable theme-button" id="themeTogglePerry" src="/icons/perry.png" title="Switch to Perry colour theme" alt="Perry">
+            <img class="clickable theme-button" id="themeToggleOde" src="/icons/ode.png" title="Switch to Ode colour theme" alt="Ode">
+          </div>
+        </div>
+        <div id="crow-start" class="fr clickable" alt="Crow Attack">
+          <img src="/assets/FunFind_crow_left.gif" alt="Crow Attack">
+        </div>
+      </div>
+    </header>
+    <div class="links">
+      <a href="https://bsky.app/profile/eggrens.bsky.social"><img src="/assets/bluesky-icon.png" alt="Bluesky"></a>
+      <a href="https://bsky.app/profile/denizendeerjay.bsky.social"><img src="/assets/bluesky-nsfw-icon.png" alt="Bluesky 18+"></a>
+      <a href="https://eggrens.tumblr.com/"><img src="/assets/tumblr-icon.png" alt="Tumblr"></a>
+      <a href="https://github.com/Eggrens"><img src="/assets/github-icon.png" alt="Github"></a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li class="nav-section">Main Pages</li>
+        <ul class="nav-section-content">
+          <li>
+            <img class="nav-icon" src="/assets/placeholder.png">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <img class="nav-icon" src="/assets/placeholder.png">
+            <a href="#">Art Gallery</a>
+          </li>
+          <li>
+            <img class="nav-icon" src="/assets/placeholder.png">
+            <a href="#">My Characters</a>
+          </li>
+          <li>
+            <img class="nav-icon" src="/assets/placeholder.png">
+            <a href="#">My Programming Stuff</a>
+          </li>
+          <li>
+            <img class="nav-icon" src="/assets/placeholder.png">
+            <a href="#">Commissions</a>
+          </li>
+        </ul>
+        <li class="nav-section">Other Pages</li>
+        <ul class="nav-section-content">
+          <li>
+            <img class="nav-icon" src="/assets/placeholder.png">
+            <a href="#">BTD6 Monkey Team Generator</a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+    <main>
+      <div class="forum">
+        <div class="forum-info">
           <img id="forum-portrait" class="portrait" src="/portraits/perry.jpg">
           <dl class="user-details">
             <dt class="username">Eggrens</dt>
             <dd>Pronouns: he/him</dd>
             <dd>Age: <span id="age">XX</span></dd>
             <dd id="forum-species">Species: Canada jay</dd>
-            <dd>Location: my computer</dd>
+            <dd>Location: My computer, Canada</dd>
             <dd>Joined: 2004-09-08</dd>
             <dd>
               Power:
@@ -63,7 +111,7 @@
         </div>
         <div class="forum-body">
           <div class="forum-content" style="min-height: 350px;">
-            <center><h1>About Me!!</h1></center>
+            <h1>About Me!!</h1>
             <p>
               umm hiiiii,,, i'm Eggrens, or u can call me Jay for short :&gt; <br><br>
               my interests:
@@ -86,14 +134,6 @@
               </ul>
               add me on Discord (@eggrens) if u wanna chat :3 :smile:
             </p>
-            <div class="links">
-              <center>
-              <a href="https://bsky.app/profile/eggrens.bsky.social"><img src="/assets/bluesky-icon.png" alt="Bluesky"></a>
-              <a href="https://bsky.app/profile/denizendeerjay.bsky.social"><img src="/assets/bluesky-nsfw-icon.png" alt="Bluesky 18+"></a>
-              <a href="https://eggrens.tumblr.com/"><img src="/assets/tumblr-icon.png" alt="Tumblr"></a>
-              <a href="https://github.com/Eggrens"><img src="/assets/github-icon.png" alt="Github"></a>
-              </center>
-            </div>
           </div>
           <div class="signature">
             <img src="/assets/kubuntu-user.png">
@@ -102,92 +142,28 @@
             <img src="/assets/h2ouser.jpg">
             <img src="/assets/htmluser.jpg">
             <img src="/assets/internet_user.jpg">
-            <div id="crow-start" class="fr clickable" alt="Crow Attack">
-              <img src="/assets/FunFind_crow_left.gif" alt="Crow Attack">
-            </div>
           </div>
         </div>
       </div>
 
-      <center>
-        <h1>Update Log:</h1>
-        <iframe src="update_log.html" width="900" height="300" title="Update Log"></iframe>
-        <img style="height: 40px; margin-top: 10px;" src="/assets/neocities.png" alt="Hosted by Neocities">
-      </center>
-    </div>
+      <h1>Update Log:</h1>
+      <iframe src="update_log.html" title="Update Log"></iframe>
+    </main>
 
-    <script src="main.js"></script>
+    <footer>
+      <img style="height: 40px; margin-top: 10px;" src="/assets/neocities.png" alt="Hosted by Neocities">
+    </footer>
+
+    <script src="/scripts/crow-attack.js"></script>
+    <script src="/scripts/theme.js"></script>
+    <script src="/scripts/lib/luxon.min.js"></script>
+    <script>
+      // Calculate age in years
+      var ageElement = document.getElementById("age");
+      var birthday = luxon.DateTime.fromISO('2004-09-08');
+      var diff = birthday.diffNow('years').toObject();
+      var years = Math.floor(Math.abs(diff['years']));
+      ageElement.innerText = years;
+    </script>
   </body>
-
-  <script>
-    // Calculate age in years
-    var ageElement = document.getElementById("age");
-    var birthday = luxon.DateTime.fromISO('2004-09-08');
-    var diff = birthday.diffNow('years').toObject();
-    var years = Math.floor(Math.abs(diff['years']));
-    ageElement.innerHTML = years;
-
-    // Crow attack
-    var crowStart = document.getElementById("crow-start");
-    var crowStop = document.getElementById("crow-stop");
-    var crowMore = document.getElementById("crow-more");
-    var crowMsg = document.getElementById("crow-msg");
-    var crowMusic = document.getElementById("crow-music");
-    var crowContainer = document.getElementById("crow-container");
-    var crowLand = document.getElementById("crow-land");
-    var crowTemplate = document.getElementById("crow-template");
-
-    function randomCoords() {
-      const x = Math.floor(Math.random() * crowLand.offsetWidth);
-      const y = Math.floor(Math.random() * crowLand.offsetHeight);
-      return [x, y];
-    }
-
-    function randomHeight() {
-      return Math.floor(Math.random() * 150) + 105;
-    }
-
-    function makeCrows() {
-      var crows = crowTemplate.cloneNode();
-      var coords = randomCoords();
-      crows.removeAttribute("id");
-      crows.removeAttribute("hidden");
-      crows.style.left = `${coords[0]}px`;
-      crows.style.top = `${coords[1]}px`;
-      crows.style.height = `${randomHeight()}px`;
-      crowLand.appendChild(crows);
-    }
-
-    crowStart.addEventListener("click", function() {
-      crowContainer.style.display = "block";
-      crowMsg.textContent = "Crow attack!";
-
-      crowMusic.volume = 0.25;
-      crowMusic.currentTime = 0;
-      crowMusic.play();
-
-      var crowsNormalIntervalId = setInterval(makeCrows, 3000);
-      crowContainer.dataset.intervalId = crowsNormalIntervalId;
-    });
-
-    crowMore.addEventListener("click", function() {
-      var intervalId = crowContainer.dataset.intervalId;
-      clearInterval(intervalId);
-      crowMsg.textContent = "More crows?!";
-      var crowsFastIntervalId = setInterval(makeCrows, 1000);
-      crowContainer.dataset.intervalId = crowsFastIntervalId;
-    });
-
-    crowStop.addEventListener("click", function() {
-      crowContainer.style.display = "none";
-      crowMusic.pause();
-
-      var intervalId = crowContainer.dataset.intervalId;
-      clearInterval(intervalId);
-
-      while (crowLand.hasChildNodes()) {
-          crowLand.removeChild(crowLand.firstChild);
-      }
-    });
-  </script>
 </html>

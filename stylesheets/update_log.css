@@ -1,32 +1,38 @@
 @import "main.css";
 
 body {
-    color: var(--offwhite);
-    font-family: "Courier New", Courier, monospace;
-    background-color: var(--cyblack);
-    background-image: var(--bg-grid);
-    background-attachment: unset;
-    background-size: auto;
-    background-repeat: unset;
-    background-position: 0;
-    padding: 10px;
-    word-wrap: break-word;
+  color: var(--base);
+  display: unset;
+  background: var(--grid);
+  background-attachment: unset;
+  background-size: auto;
+  background-repeat: unset;
+  background-position: 0;
+  word-wrap: break-word;
+}
+
+.theme-ode {
+  color: var(--text);
+}
+
+.content {
+  padding: 15px;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 a:link {
-  color: cyan;
+  color: var(--bright);
 }
 
 a:visited {
-  color: deeppink;
+  color: var(--bright);
 }
 
 a:hover {
-  color: white;
+  color: var(--link-hover);
 }
 
 em {

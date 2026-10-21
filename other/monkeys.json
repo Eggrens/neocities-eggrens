@@ -141,6 +141,13 @@
       "bot_path": "The Final Harmonic"
     },
     {
+      "name": "Skywarden",
+      "portrait": "BTD6_000-SkyWarden.png",
+      "top_path": "Farwind Seer",
+      "mid_path": "Stormwrath Archon",
+      "bot_path": "Winter's Mercy"
+    },
+    {
       "name": "Banana Farm",
       "portrait": "BTD6_000-BananaFarm.png",
       "top_path": "Banana Central",

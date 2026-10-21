@@ -1,5 +1,7 @@
 :root {
   /* ============= Theme Colours ============= */
+  --perry-light: #e0e0e0;
+  --perry-dark: #031d27;
   --perry-base: #e0e0e0;
   --perry-primary: #aad6be;
   --perry-secondary: #7cc3c5;
@@ -9,9 +11,11 @@
   --perry-link: #009dc0;
   --perry-link-hover: #93fff6;
   --perry-link-visited: #5662b2;
-  --perry-grid: linear-gradient(to right, rgba(0,0,0, 0.6) 0 100%), url('/assets/grid.gif'), var(--perry-text);
+  --perry-grid: linear-gradient(to right, rgba(0,0,0, 0.6) 0 100%), url('/assets/grid.gif'), var(--perry-dark);
   --perry-bg: var(--perry-base) repeat-y url('/assets/perry-bg.png');
 
+  --ode-light: #dfd5ff;
+  --ode-dark: #27031d;
   --ode-base: #0f0e12;
   --ode-primary: #5b429d;
   --ode-secondary: #642566;
@@ -21,10 +25,12 @@
   --ode-link: #ff30ba;
   --ode-link-hover: #ff97e8;
   --ode-link-visited: #9f1f3f;
-  --ode-grid: linear-gradient(to right, rgba(39,3,29, 0.6) 0 100%), url('/assets/grid.gif'), #27031d;
+  --ode-grid: linear-gradient(to right, rgba(39,3,29, 0.6) 0 100%), url('/assets/grid.gif'), var(--ode-dark);
   --ode-bg: var(--ode-base) repeat-y url('/assets/ode-bg.png');
 
   /* ============= Theme Variables ============= */
+  --light:        var(--perry-light);
+  --dark:         var(--perry-dark);
   --base:         var(--perry-base);
   --primary:      var(--perry-primary);
   --secondary:    var(--perry-secondary);
@@ -41,6 +47,8 @@
 /* ============= Ode Theme ============= */
 
 .theme-ode {
+  --light:        var(--ode-light);
+  --dark:         var(--ode-dark);
   --base:         var(--ode-base);
   --primary:      var(--ode-primary);
   --secondary:    var(--ode-secondary);

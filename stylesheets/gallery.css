@@ -1,12 +1,12 @@
 @import "main.css";
 
 em {
-  color: var(--link);
+  color: var(--tertiary);
   font-weight: bold;
 }
 
 p.none-found {
-  color: var(--link-hover)
+  color: var(--bright)
 }
 
 .gallery {
@@ -16,16 +16,16 @@ p.none-found {
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px 0px;
-  border-radius: 20px;;
-  background-color: var(--dark);
-  background-image: var(--bg-grid);
+  border: 1px solid var(--tertiary);
+  border-radius: 5px;
+  background: var(--grid);
 }
 
 .artwork {
   margin: auto;
   margin-bottom: 20px;
   width: 300px;
-  color: var(--main-text);
+  color: var(--text);
 }
 
 .artwork:hover {
@@ -36,18 +36,19 @@ p.none-found {
   display: block;
   margin: auto;
   width: 100%;
-  border: 5px hidden;
+  border: 1px solid var(--bright);
+  border-bottom: none;
   border-bottom: 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .info {
   width: 100%;
   background-color: var(--secondary);
-  border: 5px hidden;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border: 1px solid var(--bright);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .date-and-num {
@@ -56,7 +57,7 @@ p.none-found {
 }
 
 .num {
-  background-color: var(--offwhite);
+  background-color: var(--light);
   text-align: center;
   font-weight: bold;
   color: var(--dark) !important;
@@ -98,13 +99,13 @@ p.none-found {
 
 .modal-content {
   background-color: var(--dark);
-  color: var(--offwhite);
+  color: var(--light);
   text-align: center;
-  border-radius: 20px;
+  border-radius: 5px;
   margin: auto;
   padding: 10px;
   width: 600px;
-  border: 0px solid;
+  border: 1px solid var(--bright);
 }
 
 .modal-container {
@@ -112,13 +113,13 @@ p.none-found {
 }
 
 .close {
-  color: var(--secondary);
+  color: var(--bright);
   font-size: 24pt;
   font-weight: bold;
 }
 
 .close:hover, .close:focus {
-  color: var(--primary);
+  color: var(--link-hover);
   text-decoration: none;
 }
 
@@ -131,14 +132,15 @@ p.none-found {
   height: 30px;
   margin: auto;
   background-color: var(--secondary);
-  color: var(--cyblack);
+  color: var(--dark);
   border: none;
   font-weight: bold;
 }
 
 .carousel-button:disabled {
-  background-color: var(--tertiary);
-  color: rgb(44, 44, 44);
+  filter: brightness(0.5);
+  background-color: var(--secondary);
+  color: rgb(150, 150, 150);
 }
 
 .carousel-button:hover:enabled {
@@ -154,7 +156,7 @@ p.none-found {
 }
 
 #sort-by, #search-tags {
-  background-color: var(--offwhite);
+  background-color: var(--light);
   border: solid 2px;
   border-color: var(--tertiary);
   border-radius: 10px;
@@ -163,13 +165,13 @@ p.none-found {
 #submit {
   width: 80px;
   background-color: var(--primary);
-  color: var(--main-text);
+  color: var(--text);
   border: solid 2px;
   border-color: var(--tertiary);
   border-radius: 10px;
 }
 
 #submit:hover {
-  background-color: var(--offwhite);
+  background-color: var(--light);
   color: black;
 }

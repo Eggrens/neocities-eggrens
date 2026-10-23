@@ -44,6 +44,11 @@
   --bg:           var(--perry-bg);
 }
 
+@font-face {
+  font-family: "Unifont";
+  src: url("/fonts/unifont-17.0.05.otf") format("opentype");
+}
+
 /* ============= Ode Theme ============= */
 
 .theme-ode {

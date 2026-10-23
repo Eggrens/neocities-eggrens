@@ -2,11 +2,11 @@
 
 .characters {
     text-align: center;
-    color: var(--offwhite);
-    background-color: var(--cyblack);
-    background-image: var(--bg-grid);
-    border: solid 10px var(--tertiary);
-    border-radius: 20px;
+    color: var(--light);
+    background: var(--grid);
+    border: solid 1px var(--tertiary);
+    font-family: "Unifont", Courier, monospace;
+    border-radius: 5px;
     padding: 10px;
 }
 
@@ -29,11 +29,11 @@
 }
 
 .character-info {
-    background-color: var(--cyblack);
-    background-image: var(--bg-grid);
-    color: var(--offwhite);
+    background: var(--grid);
+    color: var(--light);
+    font-family: "Unifont", Courier, monospace;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .character-details {
@@ -90,7 +90,8 @@ em {
 
 .universe-info {
     background-color: var(--secondary);
-    border-radius: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--tertiary);
     padding: 10px;
     margin-top: 20px;
 }

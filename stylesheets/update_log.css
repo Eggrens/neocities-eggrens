@@ -2,6 +2,7 @@
 
 body {
   color: var(--base);
+  font-family: "Unifont", Courier, monospace;
   display: unset;
   background: var(--grid);
   background-attachment: unset;

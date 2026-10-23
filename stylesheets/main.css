@@ -123,6 +123,7 @@ a:hover {
 }
 
 header {
+  height: 250px;
   grid-area: header;
   display: flex;
   flex-direction: row;
@@ -131,7 +132,7 @@ header {
 }
 
 .header {
-  height: 250px;
+  height: 100%;
   display: block;
 }
 
@@ -195,7 +196,7 @@ footer {
 
 .extra {
   display: flex;
-  height: 230px;
+  height: calc(100% - 10px);
   flex-direction: column;
   justify-content: space-between;
   align-items: end;

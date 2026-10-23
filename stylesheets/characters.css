@@ -5,7 +5,6 @@
     color: var(--light);
     background: var(--grid);
     border: solid 1px var(--tertiary);
-    font-family: "Unifont", Courier, monospace;
     border-radius: 5px;
     padding: 10px;
 }
@@ -31,7 +30,6 @@
 .character-info {
     background: var(--grid);
     color: var(--light);
-    font-family: "Unifont", Courier, monospace;
     padding: 20px;
     border-radius: 5px;
 }
@@ -89,7 +87,7 @@ em {
 }
 
 .universe-info {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     border-radius: 5px;
     border: 1px solid var(--tertiary);
     padding: 10px;

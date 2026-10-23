@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Unifont";
+  src: url("/fonts/unifont-17.0.05.otf") format("opentype");
+}
+
 :root {
   /* ============= Theme Colours ============= */
   --perry-light: #e0e0e0;
@@ -42,11 +47,8 @@
   --link-visited: var(--perry-link-visited);
   --grid:         var(--perry-grid);
   --bg:           var(--perry-bg);
-}
 
-@font-face {
-  font-family: "Unifont";
-  src: url("/fonts/unifont-17.0.05.otf") format("opentype");
+  --font:         "Unifont", Courier, monospace;
 }
 
 /* ============= Ode Theme ============= */
@@ -81,8 +83,9 @@ body {
     "footer .";
   column-gap: 15px;
   color: var(--text);
+  font-size: 16px;
   background: var(--bg);
-  font-family: "Unifont", Courier, monospace;
+  font-family: var(--font);
   /* Remove these once website is responsive for mobile */
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -138,8 +141,8 @@ header {
 
 nav {
   grid-area: nav;
-  background-color: var(--primary);
-  border: solid 2px var(--tertiary);
+  background-color: var(--base);
+  border: solid 2px var(--secondary);
   border-radius: 5px;
   align-self: start;
   padding: 5px;
@@ -152,7 +155,7 @@ nav {
 }
 
 .nav-section {
-  background-color: var(--tertiary);
+  background-color: var(--primary);
   padding: 5px 10px;
   border-radius: 5px;
   margin: 5px 5px 15px 5px;
@@ -181,10 +184,14 @@ nav {
   margin-right: 10px;
 }
 
+button {
+  font-family: var(--font);
+}
+
 main {
   grid-area: main;
-  background-color: var(--primary);
-  border: solid 2px var(--tertiary);
+  background-color: var(--base);
+  border: solid 2px var(--secondary);
   border-radius: 5px;
   padding: 10px;
 }

@@ -1,8 +1,7 @@
 @import "main.css";
 
 em {
-  color: var(--tertiary);
-  font-weight: bold;
+  color: var(--link);
 }
 
 p.none-found {
@@ -45,7 +44,8 @@ p.none-found {
 
 .info {
   width: 100%;
-  background-color: var(--secondary);
+  background-color: var(--dark);
+  color: var(--light);
   border: 1px solid var(--bright);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -65,7 +65,8 @@ p.none-found {
 
 .date {
   text-align: center;
-  background-color: var(--primary);
+  color: var(--text);
+  background-color: var(--secondary);
 }
 
 .title-and-tags {
@@ -149,29 +150,31 @@ p.none-found {
 }
 
 .gallery-filters {
-  display: block;
-  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--tertiary);
 }
 
 #sort-by, #search-tags {
   background-color: var(--light);
-  border: solid 2px;
+  border: solid 1px;
   border-color: var(--tertiary);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #submit {
   width: 80px;
-  background-color: var(--primary);
-  color: var(--text);
-  border: solid 2px;
+  padding: 5px;
+  background-color: var(--light);
+  border: solid 1px;
   border-color: var(--tertiary);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #submit:hover {
-  background-color: var(--light);
-  color: black;
+  background-color: var(--link-hover);
 }

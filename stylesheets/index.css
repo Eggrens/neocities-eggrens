@@ -4,7 +4,6 @@
   display: flex;
   border: solid 1px var(--tertiary);
   border-radius: 5px;
-  border-collapse: collapse;
   height: fit-content;
   margin: auto;
   align-items: stretch;
@@ -13,7 +12,7 @@
 .forum-info {
   display: flex;
   flex-direction: column;
-  background: var(--secondary);
+  background: var(--primary);
   padding: 25px;
   align-items: center;
 }
@@ -42,9 +41,9 @@
   display: inline-block;
   text-align: center;
   font-weight: bold;
-  color: var(--bright);
-  background-color: var(--tertiary);
-  border: solid 1px var(--bright);
+  color: var(--tertiary);
+  background-color: var(--bright);
+  border: solid 1px var(--tertiary);
   border-radius: 5px;
 }
 

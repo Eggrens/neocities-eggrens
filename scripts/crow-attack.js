@@ -1,11 +1,4 @@
 var crowStart = document.getElementById("crow-start");
-var crowStop = document.getElementById("crow-stop");
-var crowMore = document.getElementById("crow-more");
-var crowMsg = document.getElementById("crow-msg");
-var crowMusic = document.getElementById("crow-music");
-var crowContainer = document.getElementById("crow-container");
-var crowLand = document.getElementById("crow-land");
-var crowTemplate = document.getElementById("crow-template");
 
 var crowContainer = document.createElement("div");
 crowContainer.id = "crow-container";
@@ -18,16 +11,19 @@ crowLand.id = "crow-land";
 
 var crowMsg = document.createElement("marquee");
 crowMsg.textContent = "Crow attack!";
+crowMsg.id = "crow-msg";
 
 var crowButtonContainer = document.createElement("div");
 crowButtonContainer.id = "crow-button-container";
 
 var crowStop = document.createElement("button");
 crowStop.id = "crow-stop";
+crowStop.className = "clickable"
 crowStop.innerHTML = "Stop Crow Attack";
 
 var crowMore = document.createElement("button");
 crowMore.id = "crow-more";
+crowMore.className = "clickable"
 crowMore.innerHTML = "Uh-oh!";
 
 var crowMusic = document.createElement("audio");
@@ -44,6 +40,8 @@ crowControls.append(crowButtonContainer, crowMusic, trackMsg);
 crowContainer.append(crowControls, crowLand, crowMsg);
 document.body.append(crowContainer);
 
+var crowCounter = 0;
+
 function randomCoords() {
     const x = Math.floor(Math.random() * crowLand.offsetWidth);
     const y = Math.floor(Math.random() * crowLand.offsetHeight);
@@ -55,15 +53,21 @@ function randomHeight() {
 }
 
 function makeCrows() {
-    var crows = document.createElement("img");
-    crows.className = "crows";
-    crows.src = "/assets/crows.gif";
+    if (crowCounter <= 100) {
+        var crows = document.createElement("img");
+        crows.className = "crows";
+        crows.src = "/assets/crows.gif";
 
-    var coords = randomCoords();
-    crows.style.left = `${coords[0]}px`;
-    crows.style.top = `${coords[1]}px`;
-    crows.style.height = `${randomHeight()}px`;
-    crowLand.appendChild(crows);
+        var coords = randomCoords();
+        crows.style.left = `${coords[0]}px`;
+        crows.style.top = `${coords[1]}px`;
+        crows.style.height = `${randomHeight()}px`;
+        crowLand.appendChild(crows);
+        crowCounter++;
+    } else if (crowCounter == 101) {
+        crowMsg.textContent = "No more crows are coming, for now...";
+        clearInterval(crowContainer.dataset.intervalId);
+    }
 }
 
 crowStart.addEventListener("click", function() {

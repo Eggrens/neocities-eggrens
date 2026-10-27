@@ -45,7 +45,7 @@ document.body.append(crowContainer);
 
 var crowCounter = 0;
 var crowCaw = new Audio("https://files.catbox.moe/a0qn7c.mp3");
-crowCaw.volume = 0.25;
+crowCaw.volume = 0.15;
 
 function randomCoords() {
     const x = Math.floor(Math.random() * crowLand.offsetWidth);

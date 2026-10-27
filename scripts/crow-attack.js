@@ -16,10 +16,6 @@ crowMsgContainer.innerHTML = `
 <span class='crow-msg'>Crow attack!</span>
 `;
 
-// var crowMsg = document.createElement("span");
-// crowMsg.textContent = "Crow attack!";
-// crowMsg.id = "crow-msg";
-
 var crowButtonContainer = document.createElement("div");
 crowButtonContainer.id = "crow-button-container";
 
@@ -48,6 +44,8 @@ crowContainer.append(crowControls, crowLand, crowMsgContainer);
 document.body.append(crowContainer);
 
 var crowCounter = 0;
+var crowCaw = new Audio("https://files.catbox.moe/a0qn7c.mp3");
+crowCaw.volume = 0.25;
 
 function randomCoords() {
     const x = Math.floor(Math.random() * crowLand.offsetWidth);
@@ -77,6 +75,7 @@ function makeCrows() {
         crows.style.top = `${coords[1]}px`;
         crows.style.height = `${randomHeight()}px`;
         crowLand.appendChild(crows);
+        crowCaw.play();
         crowCounter++;
     } else if (crowCounter == 101) {
         changeMessage("No more crows are coming, for now...");
@@ -92,7 +91,7 @@ crowStart.addEventListener("click", function() {
     crowMusic.currentTime = 0;
     crowMusic.play();
 
-    var crowsNormalIntervalId = setInterval(makeCrows, 3000);
+    var crowsNormalIntervalId = setInterval(makeCrows, 2900);
     crowContainer.dataset.intervalId = crowsNormalIntervalId;
 });
 
@@ -100,7 +99,7 @@ crowMore.addEventListener("click", function() {
     var intervalId = crowContainer.dataset.intervalId;
     clearInterval(intervalId);
     changeMessage("More crows?!");
-    var crowsFastIntervalId = setInterval(makeCrows, 1000);
+    var crowsFastIntervalId = setInterval(makeCrows, 1450);
     crowContainer.dataset.intervalId = crowsFastIntervalId;
 });
 

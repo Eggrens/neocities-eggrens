@@ -272,15 +272,36 @@ footer {
 
 /* ============= Crow Attack! ============= */
 
-#crow-msg {
+#crow-msg-container {
   background-color: rgba(100, 100, 100, 0.8);
-  color: yellow;
-  font-family: Arial;
   position: fixed;
+  white-space: nowrap;
   bottom: 30px;
   height: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.crow-msg {
+  display: inline-block;
+  width: 100%;
+  color: yellow;
+  text-align: center;
+  font-family: Arial;
+  letter-spacing: 1px;
   font-size: 15pt;
-  padding-top: 5px;
+  line-height: 30px;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 #crow-container {

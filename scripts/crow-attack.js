@@ -9,9 +9,16 @@ crowControls.id = "crow-controls";
 var crowLand = document.createElement("div");
 crowLand.id = "crow-land";
 
-var crowMsg = document.createElement("marquee");
-crowMsg.textContent = "Crow attack!";
-crowMsg.id = "crow-msg";
+var crowMsgContainer = document.createElement("div");
+crowMsgContainer.id = "crow-msg-container";
+crowMsgContainer.innerHTML = `
+<span class='crow-msg'>Crow attack!</span>
+<span class='crow-msg'>Crow attack!</span>
+`;
+
+// var crowMsg = document.createElement("span");
+// crowMsg.textContent = "Crow attack!";
+// crowMsg.id = "crow-msg";
 
 var crowButtonContainer = document.createElement("div");
 crowButtonContainer.id = "crow-button-container";
@@ -37,7 +44,7 @@ trackMsg.innerHTML = "&#x266B; Survival Step - Tomonori Sawada, Sonic Riders OST
 
 crowButtonContainer.append(crowStop, crowMore);
 crowControls.append(crowButtonContainer, crowMusic, trackMsg);
-crowContainer.append(crowControls, crowLand, crowMsg);
+crowContainer.append(crowControls, crowLand, crowMsgContainer);
 document.body.append(crowContainer);
 
 var crowCounter = 0;
@@ -50,6 +57,13 @@ function randomCoords() {
 
 function randomHeight() {
     return Math.floor(Math.random() * 150) + 105;
+}
+
+function changeMessage(text) {
+    var msgs = crowMsgContainer.querySelectorAll(".crow-msg");
+    for (m of msgs) {
+        m.textContent = text;
+    }
 }
 
 function makeCrows() {
@@ -65,14 +79,14 @@ function makeCrows() {
         crowLand.appendChild(crows);
         crowCounter++;
     } else if (crowCounter == 101) {
-        crowMsg.textContent = "No more crows are coming, for now...";
+        changeMessage("No more crows are coming, for now...");
         clearInterval(crowContainer.dataset.intervalId);
     }
 }
 
 crowStart.addEventListener("click", function() {
     crowContainer.style.display = "block";
-    crowMsg.textContent = "Crow attack!";
+    changeMessage("Crow attack!");
 
     crowMusic.volume = 0.25;
     crowMusic.currentTime = 0;
@@ -85,7 +99,7 @@ crowStart.addEventListener("click", function() {
 crowMore.addEventListener("click", function() {
     var intervalId = crowContainer.dataset.intervalId;
     clearInterval(intervalId);
-    crowMsg.textContent = "More crows?!";
+    changeMessage("More crows?!");
     var crowsFastIntervalId = setInterval(makeCrows, 1000);
     crowContainer.dataset.intervalId = crowsFastIntervalId;
 });

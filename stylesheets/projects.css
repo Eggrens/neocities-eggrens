@@ -13,11 +13,15 @@
 }
 
 .project-list li {
-    margin: 50px 100px;
+    margin: 50px;
+    display: flex;
+    gap: 50px;
+    height: fit-content;
+    align-items: start;
 }
 
 .project-info {
-    width: 650px;
+    width: fit-content;
 }
 
 .project-icon {
@@ -29,7 +33,6 @@
     border-radius: 5px;
 }
 
-h2 {
-    margin: 0;
-    font-size: 20pt;
+.project-heading {
+    font-size: 16pt;
 }

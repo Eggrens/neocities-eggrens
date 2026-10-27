@@ -8,6 +8,13 @@ p.none-found {
   color: var(--bright)
 }
 
+#gallery-last-updated {
+  margin: auto;
+  width: fit-content;
+  margin-bottom: 20px;
+  font-size: 16pt;
+}
+
 .gallery {
   display: flex;
   align-content: center;

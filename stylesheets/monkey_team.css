@@ -5,6 +5,11 @@ p {
     text-align: center;
 }
 
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
 .generator {
     width: 750px;
     margin: auto;

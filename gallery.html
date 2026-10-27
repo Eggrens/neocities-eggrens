@@ -9,28 +9,26 @@
   </head>
   <body>
     <main id="main">
-      <center>
+      <div class="main-intro clearfix">
         <h1>Art Gallery</h1>
-      </center>
-
-      <p style="padding: 10px">
-        To search using tags, enter each tag separated by spaces and click
-        Search (e.g. "perry ode"). <br /><br />
-
-        Clicking on an artwork brings up an expanded view of it. An artwork with
-        a number means it has multiple images associated with it. <br /><br />
-
+        <img class="intro-image" src="/assets/placeholder.png" alt="placeholder">
+        <p>
+          To search using tags, enter each tag separated by spaces and click Search (e.g. "perry ode").
+        </p>
+        <p>
+          Clicking on an artwork brings up an expanded view of it. An artwork with a number means it has multiple images associated with it.
+        </p>
         <em>
           Note: This gallery requires JavaScript to function and stores data in
           local storage, so make sure those are enabled thanks :3. If you delete
           local storage for this site at any point, you can always refresh the
           page to fix it ..
         </em>
-      </p>
-      <br />
+      </div>
 
-      <center><h3 id="gallery-last-updated"></h3></center>
-      <br />
+      <div id="gallery-last-updated">
+        Gallery last updated: ...
+      </div>
 
       <div class="gallery-filters">
         <div class="gallery-sort-container">
@@ -47,8 +45,6 @@
           <button id="submit" class="clickable">Search</button>
         </div>
       </div>
-
-      <br />
 
       <div class="gallery"></div>
 

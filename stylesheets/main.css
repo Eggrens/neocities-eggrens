@@ -250,6 +250,7 @@ footer {
 .links img {
   height: 50px;
   border-radius: 5px;
+  border: 2px solid var(--secondary);
 }
 
 .flag {

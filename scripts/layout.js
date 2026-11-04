@@ -35,30 +35,30 @@ nav.innerHTML = `
     <li class="nav-section">Main Pages</li>
     <ul class="nav-section-content">
         <li>
-            <img class="nav-icon" src="/assets/placeholder.png">
+            <img class="nav-icon" src="/assets/nav/nav-icon-home.png">
             <a href="/index.html">Home</a>
         </li>
         <li>
-            <img class="nav-icon" src="/assets/placeholder.png">
+            <img class="nav-icon" src="/assets/nav/nav-icon-gallery.png">
             <a href="/gallery.html">Art Gallery</a>
         </li>
         <li>
-            <img class="nav-icon" src="/assets/placeholder.png">
+            <img class="nav-icon" src="/assets/nav/nav-icon-characters.png">
             <a href="/characters.html">My Characters</a>
         </li>
         <li>
-            <img class="nav-icon" src="/assets/placeholder.png">
+            <img class="nav-icon" src="/assets/nav/nav-icon-projects.png">
             <a href="/projects.html">My Projects</a>
         </li>
         <li>
-            <img class="nav-icon" src="/assets/placeholder.png">
+            <img class="nav-icon" src="/assets/nav/nav-icon-commissions.png">
             <a href="/commissions.html">Commissions</a>
         </li>
     </ul>
     <li class="nav-section">Other Pages</li>
     <ul class="nav-section-content">
         <li>
-            <img class="nav-icon" src="/assets/placeholder.png">
+            <img class="nav-icon" src="/assets/nav/nav-icon-btd6.png">
             <a href="/other/monkey-team-generator.html">BTD6 Monkey Team Generator</a>
         </li>
     </ul>
